@@ -161,52 +161,8 @@ export default function AboutPage() {
               </div>
             </div>
 
-            {/* Right Column (45% width) - holds only the floating credentials card on top of background image */}
-            <div className="lg:col-span-5 relative w-full min-h-[340px] sm:min-h-[420px] lg:min-h-[460px] flex items-end justify-center lg:justify-end pb-6 lg:pb-0 z-10">
-              {/* Overlapping Floating Credentials Card */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.25 }}
-                className="relative z-10 w-full max-w-[340px] rounded-[24px] border border-orange-500/10 shadow-xl shadow-orange-950/[0.04] bg-[#FFFDF9]/80 backdrop-blur-md p-6 lg:absolute lg:bottom-4 lg:-right-8"
-              >
-                <div className="flex justify-between items-center mb-5">
-                  <span className="font-[family-name:var(--font-outfit)] text-xs font-bold text-[#D9791A] uppercase tracking-wider">
-                    Our Credentials
-                  </span>
-                  <div className="w-7 h-7 rounded-lg bg-orange-50 border border-orange-100 flex items-center justify-center text-[#D9791A]">
-                    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                    </svg>
-                  </div>
-                </div>
-
-                <div className="flex flex-col space-y-3.5 mb-6 text-xs text-[#5B5955]">
-                  <div className="flex justify-between items-center pb-2 border-b border-slate-100">
-                    <span className="text-slate-500 font-medium">AMFI Registration</span>
-                    <span className="font-semibold text-slate-800">ARN-{brand.amfiRegNo}</span>
-                  </div>
-                  <div className="flex justify-between items-center pb-2 border-b border-slate-100">
-                    <span className="text-slate-500 font-medium">EUIN Number</span>
-                    <span className="font-semibold text-slate-800">{brand.euinNo}</span>
-                  </div>
-                  <div className="flex justify-between items-center">
-                    <span className="text-slate-500 font-medium">Advisory Type</span>
-                    <span className="font-semibold text-slate-800">Mutual Fund Distributor</span>
-                  </div>
-                </div>
-
-                <div className="pt-4 border-t border-slate-100 flex items-center gap-3">
-                  <div className="w-8 h-8 rounded-full bg-orange-50 border border-orange-100 flex items-center justify-center text-[#D9791A] font-bold text-xs">
-                    WA
-                  </div>
-                  <div className="flex flex-col">
-                    <span className="text-[10px] font-bold text-slate-800 leading-none">Wealth Acumen</span>
-                    <span className="text-[9px] font-medium text-slate-400 mt-0.5 leading-none">Invest Right, Prosper Bright</span>
-                  </div>
-                </div>
-              </motion.div>
-            </div>
+            {/* Right Column (45% width) - reserved for background image visibility */}
+            <div className="lg:col-span-5 relative w-full min-h-[340px] sm:min-h-[420px] lg:min-h-[460px] z-10" />
           </div>
         </div>
       </section>
