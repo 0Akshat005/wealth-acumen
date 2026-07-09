@@ -103,8 +103,11 @@ export function Navbar() {
           >
             <div className="flex-1 flex items-center justify-center gap-2">
               <span className="text-[#D9791A] text-base leading-none select-none">★</span>
-              <span className="text-[#EFEEEB] font-medium truncate max-w-[65vw] sm:max-w-none">
+              <span className="text-[#EFEEEB] font-medium hidden md:inline">
                 LIMITED OFFER: July Portfolio Audit Cycle – Only 4 complimentary reviews left this week.
+              </span>
+              <span className="text-[#EFEEEB] font-medium inline md:hidden text-[10px] sm:text-[11px] truncate max-w-[45vw]">
+                Portfolio Audit: 4 free slots left
               </span>
               <a
                 href={brand.whatsapp}
@@ -137,7 +140,7 @@ export function Navbar() {
             : "bg-transparent border-b border-transparent"
         }`}
       >
-        <div className="max-w-none mx-auto px-4 sm:px-10 lg:px-20 xl:px-28">
+        <div className="max-w-none mx-auto px-4 sm:px-10 lg:px-16 xl:px-20">
           <div className="flex items-center justify-between h-16 md:h-20">
             {/* Logo lockup matching screenshot */}
             <Link href="/" className="flex items-center gap-3 shrink-0">
@@ -177,7 +180,7 @@ export function Navbar() {
                   >
                     <Link
                       href={link.href}
-                      className={`px-3 py-2 text-[16px] font-semibold transition-colors flex items-center gap-1 relative ${
+                      className={`px-3 py-2 text-[16px] font-semibold tracking-wide transition-colors flex items-center gap-1 relative ${
                         isActive ? "text-[#D9791A]" : "text-[#10141F] hover:text-[#D9791A]"
                       }`}
                     >

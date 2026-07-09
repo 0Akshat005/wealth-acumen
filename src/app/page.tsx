@@ -106,7 +106,7 @@ export default function HomePage() {
       {/* ═══════════════════════════════════════════ */}
       {/*              CINEMATIC HERO                */}
       {/* ═══════════════════════════════════════════ */}
-                  <section ref={heroRef} className="relative min-h-[100dvh] pt-28 pb-16 flex items-center justify-center bg-[#FCF9F4] overflow-hidden">
+                  <section ref={heroRef} className="relative min-h-[100dvh] pt-24 pb-12 sm:pt-28 sm:pb-16 flex items-center justify-center bg-[#FCF9F4] overflow-x-hidden">
         {/* Full-bleed golden hour desk skyline background */}
         <div className="absolute inset-0 select-none pointer-events-none z-0">
           <Image
@@ -130,7 +130,7 @@ export default function HomePage() {
         }} />
 
         {/* Main Grid Container */}
-        <div className="relative z-10 max-w-none mx-auto px-4 sm:px-10 lg:px-20 xl:px-28 w-full flex flex-col justify-between">
+        <div className="relative z-10 max-w-none mx-auto px-4 sm:px-10 lg:px-16 xl:px-20 w-full flex flex-col justify-between">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center w-full">
             {/* Left Content Column */}
             <div className="lg:col-span-9 flex flex-col items-start text-left space-y-6 sm:space-y-8">
@@ -139,7 +139,7 @@ export default function HomePage() {
                 initial={{ opacity: 0, y: 15 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
-                className="inline-flex flex-wrap items-center gap-y-2 gap-x-4 sm:gap-x-8 select-none py-1"
+                className="flex flex-col sm:flex-row sm:items-center gap-y-3 gap-x-4 sm:gap-x-8 select-none py-1 w-full sm:w-auto"
               >
                 {/* AMFI Registered */}
                 <div className="flex items-center gap-2">
@@ -199,7 +199,7 @@ export default function HomePage() {
                   initial={{ opacity: 0, y: 30 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.15 }}
-                  className="font-[family-name:var(--font-serif)] text-[2.75rem] sm:text-6xl lg:text-[4.25rem] font-bold text-[#10141F] leading-[1.08] tracking-tight text-left"
+                  className="font-[family-name:var(--font-serif)] text-[2.35rem] min-[380px]:text-[2.75rem] sm:text-6xl lg:text-[4.25rem] font-bold text-[#10141F] leading-[1.08] tracking-tight text-left"
                 >
                   Smart Investment. <br />
                   Stronger Future. <br />
@@ -252,7 +252,7 @@ export default function HomePage() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.6 }}
-                className="flex flex-wrap items-center gap-y-2 gap-x-4 text-xs font-semibold text-[#5B5955] justify-start pt-2 select-none"
+                className="flex flex-col sm:flex-row sm:items-center gap-y-2.5 gap-x-4 text-xs font-semibold text-[#5B5955] justify-start pt-2 select-none w-full"
               >
                 <span className="flex items-center gap-1.5">
                   <svg className="w-4 h-4 text-[#D9791A]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
@@ -281,23 +281,7 @@ export default function HomePage() {
             <div className="lg:col-span-3 flex flex-col space-y-8 w-full h-full justify-between py-4">
 
 
-              {/* Laptop & Plaque visual placeholder to reserve space on desktop, visible on mobile/tablet */}
-              <div className="relative w-full aspect-[4/3] flex items-center justify-center select-none z-10 lg:hidden">
-                <motion.div
-                  animate={{ y: [0, -8, 0] }}
-                  transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-                  className="relative w-full h-full max-w-[480px]"
-                >
-                  <Image
-                    src="/assets/images/hero-desk-composite.png"
-                    alt="Wealth Acumen Laptop plaque mockup"
-                    fill
-                    className="object-contain"
-                    sizes="(max-width: 1024px) 100vw, 40vw"
-                    priority
-                  />
-                </motion.div>
-              </div>
+
 
               {/* Large spacing on desktop to keep the layout open and show off the laptop/plaque background */}
               <div className="hidden lg:block h-60" />
