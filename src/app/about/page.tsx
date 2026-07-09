@@ -202,39 +202,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* ═══ WHY CHOOSE US ═══ */}
-      <section className="section-padding">
-        <div className="max-w-6xl mx-auto">
-          <FadeInSection>
-            <div className="text-center mb-16">
-              <p className="text-sm font-medium text-indigo-600 tracking-wider uppercase mb-3">
-                We bring the best things for you
-              </p>
-              <h2 className="font-[family-name:var(--font-outfit)] text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900">
-                Why <span className="gradient-text">Choose Us</span>
-              </h2>
-            </div>
-          </FadeInSection>
- 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {top3.map((item, i) => (
-              <FadeInSection key={item.title} delay={i * 0.1}>
-                <div className="glass glass-hover rounded-2xl p-7 h-full">
-                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-indigo-500/10 to-cyan-500/10 flex items-center justify-center mb-5 text-indigo-600">
-                    {iconMap[item.icon] || iconMap.target}
-                  </div>
-                  <h3 className="font-[family-name:var(--font-outfit)] text-lg font-semibold text-slate-900 mb-2">
-                    {item.title}
-                  </h3>
-                  <p className="text-sm text-slate-600 leading-relaxed">
-                    {item.description}
-                  </p>
-                </div>
-              </FadeInSection>
-            ))}
-          </div>
-        </div>
-      </section>
+
 
       {/* ═══ OUR MISSION ═══ */}
       <section className="section-padding bg-gradient-to-b from-transparent via-indigo-500/[0.02] to-transparent">
