@@ -145,25 +145,30 @@ export default function AboutPage() {
               </div>
             </div>
 
-            {/* Right Column (45% width) with overlapping credentials card */}
-            <div className="lg:col-span-5 flex flex-col items-center justify-center relative w-full lg:h-full lg:min-h-[420px]">
-              {/* Main Visual Image */}
-              <div className="relative w-full aspect-[4/3] rounded-[24px] overflow-hidden border border-[#E7E1D8] shadow-lg bg-white">
+            {/* Right Column (45% width) with immersive disappearing visual */}
+            <div className="lg:col-span-5 relative w-full min-h-[380px] sm:min-h-[460px] lg:min-h-[500px] flex items-end justify-center lg:justify-end pb-6 lg:pb-0 z-10">
+              {/* Immersive Image Container */}
+              <div className="absolute inset-0 select-none pointer-events-none z-0 rounded-[32px] overflow-hidden">
                 <Image
                   src="/assets/images/about-hero-visual.jpg"
                   alt="Financial Growth Compass"
                   fill
-                  className="object-cover"
+                  className="object-cover object-center opacity-85"
                   priority
                 />
+                {/* 360-degree soft gradient disappearing masks to blend visual perfectly into #FFFDF9 */}
+                <div className="absolute inset-y-0 left-0 w-24 sm:w-36 bg-gradient-to-r from-[#FFFDF9] via-[#FFFDF9]/60 to-transparent" />
+                <div className="absolute inset-y-0 right-0 w-16 sm:w-24 bg-gradient-to-l from-[#FFFDF9] to-transparent" />
+                <div className="absolute inset-x-0 top-0 h-24 sm:h-32 bg-gradient-to-b from-[#FFFDF9] via-[#FFFDF9]/40 to-transparent" />
+                <div className="absolute inset-x-0 bottom-0 h-24 sm:h-32 bg-gradient-to-t from-[#FFFDF9] via-[#FFFDF9]/40 to-transparent" />
               </div>
 
               {/* Overlapping Floating Credentials Card */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
-                className="w-full max-w-[340px] rounded-[24px] border border-orange-500/10 shadow-xl shadow-orange-950/[0.03] bg-[#FFFDF9]/95 backdrop-blur-md p-6 mt-6 lg:mt-0 lg:absolute lg:bottom-4 lg:-right-10 z-20"
+                transition={{ duration: 0.8, delay: 0.25 }}
+                className="relative z-10 w-full max-w-[340px] rounded-[24px] border border-orange-500/10 shadow-xl shadow-orange-950/[0.04] bg-[#FFFDF9]/80 backdrop-blur-md p-6 lg:absolute lg:bottom-4 lg:-right-8"
               >
                 <div className="flex justify-between items-center mb-5">
                   <span className="font-[family-name:var(--font-outfit)] text-xs font-bold text-[#D9791A] uppercase tracking-wider">
