@@ -66,8 +66,8 @@ export default function AboutPage() {
           <div className="absolute bottom-1/3 right-1/4 w-80 h-80 bg-[#FFFDF9] rounded-full blur-[120px] animate-pulse-glow" style={{ animationDelay: "2s" }} />
         </div>
 
-        {/* Immersive Independent Visual Background - fades and overlaps behind grid */}
-        <div className="absolute inset-x-0 bottom-0 h-[320px] sm:h-[400px] lg:inset-y-0 lg:right-0 lg:left-auto lg:w-[48%] lg:h-full z-0 pointer-events-none select-none overflow-hidden opacity-90">
+        {/* Desktop-only: Immersive Independent Visual Background - fades and overlaps behind grid */}
+        <div className="hidden lg:block absolute inset-y-0 right-0 w-[48%] z-0 pointer-events-none select-none overflow-hidden opacity-90">
           <Image
             src="/assets/images/about-hero-visual.jpg"
             alt=""
@@ -161,8 +161,19 @@ export default function AboutPage() {
               </div>
             </div>
 
-            {/* Right Column (45% width) - reserved for background image visibility */}
-            <div className="lg:col-span-5 relative w-full min-h-[340px] sm:min-h-[420px] lg:min-h-[460px] z-10" />
+            {/* Right Column (45% width) - holds the visual on mobile/tablet */}
+            <div className="lg:col-span-5 relative w-full lg:min-h-[460px] flex items-center justify-center">
+              {/* Mobile-only beautiful cropped card */}
+              <div className="lg:hidden relative w-full h-[280px] sm:h-[380px] rounded-2xl overflow-hidden shadow-md border border-orange-100/20 mt-8">
+                <Image
+                  src="/assets/images/about-hero-visual.jpg"
+                  alt="Wealth Acumen visual"
+                  fill
+                  className="object-cover object-center"
+                  priority
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
