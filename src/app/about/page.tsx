@@ -58,11 +58,11 @@ export default function AboutPage() {
   return (
     <>
       {/* ═══ HERO ═══ */}
-      <section className="relative overflow-hidden pt-32 pb-20">
+      <section className="relative overflow-hidden pt-28 pb-16 bg-[#FCF9F4] border-b border-slate-200/50">
         {/* Background effects */}
-        <div className="absolute inset-0">
-          <div className="absolute top-1/4 left-1/3 w-96 h-96 bg-indigo-500/10 rounded-full blur-[128px] animate-pulse-glow" />
-          <div className="absolute bottom-1/3 right-1/4 w-80 h-80 bg-cyan-500/10 rounded-full blur-[128px] animate-pulse-glow" style={{ animationDelay: "2s" }} />
+        <div className="absolute inset-0 select-none pointer-events-none z-0">
+          <div className="absolute top-1/4 left-1/3 w-96 h-96 bg-indigo-500/5 rounded-full blur-[128px] animate-pulse-glow" />
+          <div className="absolute bottom-1/3 right-1/4 w-80 h-80 bg-cyan-500/5 rounded-full blur-[128px] animate-pulse-glow" style={{ animationDelay: "2s" }} />
         </div>
 
         {/* Grid pattern */}
@@ -75,38 +75,131 @@ export default function AboutPage() {
           }}
         />
 
-        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center">
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-xs font-medium text-slate-300 mb-8"
-          >
-            <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
-            AMFI Registered &bull; ARN {brand.amfiRegNo}
-          </motion.div>
+        <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-10 lg:px-16 xl:px-20 w-full">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            {/* Left Content Column */}
+            <div className="lg:col-span-7 flex flex-col items-start text-left space-y-6">
+              <span className="text-xs font-bold text-[#D9791A] tracking-[0.2em] uppercase leading-none">
+                Who We Are
+              </span>
+              
+              <h1 className="font-[family-name:var(--font-outfit)] text-4xl sm:text-5xl lg:text-[3.5rem] font-bold text-[#10141F] leading-[1.1] tracking-tight">
+                About <span className="gradient-text">Wealth Acumen</span>
+              </h1>
 
-          <motion.h1
-            initial={{ opacity: 0, y: 24 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
-            className="font-[family-name:var(--font-outfit)] text-4xl sm:text-5xl md:text-6xl font-bold leading-tight tracking-tight mb-6"
-          >
-            About <span className="gradient-text">Wealth Acumen</span>
-          </motion.h1>
+              <div className="space-y-4 text-base sm:text-lg text-[#5B5955] leading-relaxed font-normal">
+                <p>
+                  {aboutContent.intro}
+                </p>
+                <p>
+                  Our goal is to deliver personalized strategies, trusted insights, and ethical guidance to help you navigate your wealth journey with clarity and confidence. We believe in building long-term relationships based on transparency and mutual growth.
+                </p>
+              </div>
 
-          <motion.p
-            initial={{ opacity: 0, y: 24 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
-            className="text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto leading-relaxed"
-          >
-            {aboutContent.intro}
-          </motion.p>
+              {/* Three small premium trust badges below content */}
+              <div className="pt-5 flex flex-wrap gap-4 w-full border-t border-slate-200/60 mt-4">
+                {/* Badge 1 */}
+                <div className="flex items-center gap-2.5 bg-white/50 backdrop-blur-sm border border-orange-500/10 rounded-xl px-4 py-2.5 shadow-sm">
+                  <span className="w-6 h-6 rounded-full bg-orange-50 flex items-center justify-center text-[#D9791A] shrink-0">
+                    <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                      <circle cx="12" cy="12" r="10" />
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12" />
+                    </svg>
+                  </span>
+                  <div className="text-[10px] sm:text-xs font-bold text-slate-800 leading-tight">
+                    AMFI Registered <br />
+                    <span className="text-[#D9791A] font-semibold">ARN {brand.amfiRegNo}</span>
+                  </div>
+                </div>
+
+                {/* Badge 2 */}
+                <div className="flex items-center gap-2.5 bg-white/50 backdrop-blur-sm border border-orange-500/10 rounded-xl px-4 py-2.5 shadow-sm">
+                  <span className="w-6 h-6 rounded-full bg-orange-50 flex items-center justify-center text-[#D9791A] shrink-0">
+                    <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
+                    </svg>
+                  </span>
+                  <div className="text-[10px] sm:text-xs font-bold text-slate-800 leading-tight">
+                    SEBI Compliant <br />
+                    <span className="text-slate-500">Advisory Compliant</span>
+                  </div>
+                </div>
+
+                {/* Badge 3 */}
+                <div className="flex items-center gap-2.5 bg-white/50 backdrop-blur-sm border border-emerald-500/10 rounded-xl px-4 py-2.5 shadow-sm">
+                  <span className="w-6 h-6 rounded-full bg-emerald-50 flex items-center justify-center text-emerald-600 shrink-0">
+                    <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor">
+                      <circle cx="12" cy="5" r="2" />
+                      <circle cx="9" cy="10" r="2" />
+                      <circle cx="15" cy="10" r="2" />
+                      <circle cx="6" cy="16" r="2" />
+                      <circle cx="12" cy="16" r="2" />
+                      <circle cx="18" cy="16" r="2" />
+                    </svg>
+                  </span>
+                  <div className="text-[10px] sm:text-xs font-bold text-slate-800 leading-tight">
+                    Channel Partner <br />
+                    <span className="text-[#10141F]">Angel One Ltd</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Right Column: Premium Visual Card */}
+            <div className="lg:col-span-5 flex items-center justify-center relative">
+              {/* Background glow behind graphic */}
+              <div className="absolute w-72 h-72 rounded-full bg-orange-100/50 blur-[60px] pointer-events-none" />
+
+              <motion.div
+                initial={{ opacity: 0, x: 20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                className="relative w-full max-w-[380px] aspect-[4/3] rounded-[24px] overflow-hidden border border-[#E7E1D8] shadow-xl shadow-[#10141F]/[0.04] bg-white p-6 flex flex-col justify-between"
+              >
+                {/* Gold/Orange Ambient Light inside Card */}
+                <div className="absolute top-0 right-0 w-32 h-32 bg-orange-100/30 rounded-full blur-[40px] pointer-events-none" />
+                <div className="absolute bottom-0 left-0 w-32 h-32 bg-indigo-50/40 rounded-full blur-[40px] pointer-events-none" />
+
+                <div className="relative z-10 flex justify-between items-start">
+                  <div className="flex flex-col">
+                    <span className="text-[10px] font-bold text-[#D9791A] tracking-wider uppercase">Credentials</span>
+                    <span className="font-[family-name:var(--font-outfit)] text-lg font-bold text-slate-800 mt-1">Certified Distributor</span>
+                  </div>
+                  <div className="w-10 h-10 rounded-xl bg-orange-50 border border-orange-100/50 flex items-center justify-center text-[#D9791A]">
+                    <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                    </svg>
+                  </div>
+                </div>
+
+                <div className="relative z-10 my-6 flex flex-col justify-center space-y-3">
+                  <div className="flex justify-between items-center text-xs">
+                    <span className="text-slate-500 font-medium">AMFI Registration:</span>
+                    <span className="font-semibold text-slate-800">ARN-{brand.amfiRegNo}</span>
+                  </div>
+                  <div className="flex justify-between items-center text-xs">
+                    <span className="text-slate-500 font-medium">EUIN Number:</span>
+                    <span className="font-semibold text-slate-800">{brand.euinNo}</span>
+                  </div>
+                  <div className="flex justify-between items-center text-xs">
+                    <span className="text-slate-500 font-medium">Advisory Type:</span>
+                    <span className="font-semibold text-slate-800">Mutual Fund Distributor</span>
+                  </div>
+                </div>
+
+                <div className="relative z-10 pt-4 border-t border-slate-100 flex items-center gap-3">
+                  <div className="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-750 font-bold text-xs">
+                    WA
+                  </div>
+                  <div className="flex flex-col">
+                    <span className="text-[10px] font-bold text-slate-850 leading-none">Wealth Acumen</span>
+                    <span className="text-[9px] font-medium text-slate-400 mt-0.5 leading-none">Invest Right, Prosper Bright</span>
+                  </div>
+                </div>
+              </motion.div>
+            </div>
+          </div>
         </div>
-
-        {/* Bottom fade */}
-        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#F8FAFC] to-transparent" />
       </section>
 
       {/* ═══ WHY CHOOSE US ═══ */}
@@ -256,40 +349,7 @@ export default function AboutPage() {
         </div>
       </section>
  
-      {/* ═══ AMFI REGISTRATION BADGE ═══ */}
-      <section className="section-padding">
-        <div className="max-w-3xl mx-auto">
-          <FadeInSection>
-            <div className="glass rounded-2xl p-8 md:p-10 text-center">
-              <div className="flex items-center justify-center gap-3 mb-5">
-                <svg className="w-8 h-8 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                </svg>
-                <h3 className="font-[family-name:var(--font-outfit)] text-xl font-semibold text-slate-900">
-                  AMFI Registered Mutual Fund Distributor
-                </h3>
-              </div>
- 
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-6 text-sm text-slate-600">
-                <div className="flex items-center gap-2">
-                  <span className="text-slate-500">ARN:</span>
-                  <span className="text-slate-900 font-semibold">{brand.amfiRegNo}</span>
-                </div>
-                <div className="hidden sm:block w-px h-4 bg-slate-300" />
-                <div className="flex items-center gap-2">
-                  <span className="text-slate-500">EUIN:</span>
-                  <span className="text-slate-900 font-semibold">{brand.euinNo}</span>
-                </div>
-                <div className="hidden sm:block w-px h-4 bg-slate-300" />
-                <div className="flex items-center gap-2">
-                  <span className="text-slate-500">Channel Partner:</span>
-                  <span className="text-slate-900 font-semibold">Angel One Ltd.</span>
-                </div>
-              </div>
-            </div>
-          </FadeInSection>
-        </div>
-      </section>
+
     </>
   );
 }
