@@ -293,11 +293,11 @@ export default function HomePage() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="w-full max-w-none mx-auto mt-16 pt-8 border-t border-[#E7E1D8]/60 relative z-20"
+            className="w-full max-w-none mx-auto mt-16 relative z-20"
           >
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-y-6 lg:gap-y-0 divide-y-0 lg:divide-y divide-[#E7E1D8] gap-x-4">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
               {/* Stat 1 */}
-              <div className="text-center px-4 flex flex-col lg:flex-row items-center justify-center gap-4">
+              <div className="flex flex-col lg:flex-row items-center justify-center gap-4 bg-[#FFFDF9]/10 backdrop-blur-[8px] border border-[#D9791A]/10 rounded-[18px] p-5 sm:p-6 shadow-sm shadow-orange-600/[0.03] transition-all duration-300 hover:border-[#D9791A]/20 hover:shadow-md hover:shadow-orange-600/[0.05]">
                 <div className="w-12 h-12 rounded-full bg-orange-50 border border-orange-100 flex items-center justify-center text-[#D9791A] shrink-0 shadow-sm">
                   <svg className="w-6 h-6 text-[#D9791A]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M6 18c-2-3-2-8 0-12m1-1c-1.5 2-1.5 5 0 8m-2-5c1 1.5 3 1.5 4 0" />
@@ -314,7 +314,7 @@ export default function HomePage() {
               </div>
 
               {/* Stat 2 */}
-              <div className="text-center px-4 flex flex-col lg:flex-row items-center justify-center gap-4 border-t border-[#E7E1D8] lg:border-t-0 pt-6 lg:pt-0">
+              <div className="flex flex-col lg:flex-row items-center justify-center gap-4 bg-[#FFFDF9]/10 backdrop-blur-[8px] border border-[#D9791A]/10 rounded-[18px] p-5 sm:p-6 shadow-sm shadow-orange-600/[0.03] transition-all duration-300 hover:border-[#D9791A]/20 hover:shadow-md hover:shadow-orange-600/[0.05]">
                 <div className="w-12 h-12 rounded-full bg-orange-50 border border-orange-100 flex items-center justify-center text-[#D9791A] shrink-0 shadow-sm">
                   <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.109A11.386 11.386 0 0 0 12 21c-2.829 0-5.437-.893-7.563-2.4a9.338 9.338 0 0 1 13.813-2.493M14 9.75a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
@@ -329,7 +329,7 @@ export default function HomePage() {
               </div>
 
               {/* Stat 3 */}
-              <div className="text-center px-4 flex flex-col lg:flex-row items-center justify-center gap-4 border-t border-[#E7E1D8] lg:border-t-0 pt-6 lg:pt-0">
+              <div className="flex flex-col lg:flex-row items-center justify-center gap-4 bg-[#FFFDF9]/10 backdrop-blur-[8px] border border-[#D9791A]/10 rounded-[18px] p-5 sm:p-6 shadow-sm shadow-orange-600/[0.03] transition-all duration-300 hover:border-[#D9791A]/20 hover:shadow-md hover:shadow-orange-600/[0.05]">
                 <div className="w-12 h-12 rounded-full bg-orange-50 border border-orange-100 flex items-center justify-center text-[#D9791A] shrink-0 shadow-sm">
                   <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 6a7.5 7.5 0 1 0 7.5 7.5h-7.5V6Z" /><path strokeLinecap="round" strokeLinejoin="round" d="M13.5 10.5H21a7.5 7.5 0 0 0-7.5-7.5v7.5Z" />
@@ -344,7 +344,7 @@ export default function HomePage() {
               </div>
 
               {/* Stat 4 */}
-              <div className="text-center px-4 flex flex-col lg:flex-row items-center justify-center gap-4 border-t border-[#E7E1D8] lg:border-t-0 pt-6 lg:pt-0">
+              <div className="flex flex-col lg:flex-row items-center justify-center gap-4 bg-[#FFFDF9]/10 backdrop-blur-[8px] border border-[#D9791A]/10 rounded-[18px] p-5 sm:p-6 shadow-sm shadow-orange-600/[0.03] transition-all duration-300 hover:border-[#D9791A]/20 hover:shadow-md hover:shadow-orange-600/[0.05]">
                 <div className="w-12 h-12 rounded-full bg-orange-50 border border-orange-100 flex items-center justify-center text-[#D9791A] shrink-0 shadow-sm">
                   <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />

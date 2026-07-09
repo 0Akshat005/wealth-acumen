@@ -121,27 +121,7 @@ export default function ServicePageClient({ slug }: { slug: string }) {
         />
 
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 text-center">
-          <motion.nav
-            initial={{ opacity: 0, y: -12 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="flex items-center justify-center gap-2 text-sm text-slate-500 mb-8"
-          >
-            <Link href="/" className="hover:text-slate-700 transition-colors">Home</Link>
-            <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" /></svg>
-            <span className="text-slate-500">Services</span>
-            <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" /></svg>
-            <span className="text-indigo-600 font-medium">{service.title}</span>
-          </motion.nav>
 
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6 }}
-            className="w-20 h-20 rounded-2xl bg-gradient-to-br from-indigo-500/15 to-cyan-500/10 border border-indigo-500/20 flex items-center justify-center mx-auto mb-8 text-indigo-400"
-          >
-            {serviceIcons[service.icon] || serviceIcons["bar-chart-2"]}
-          </motion.div>
 
           <motion.h1
             initial={{ opacity: 0, y: 24 }}
