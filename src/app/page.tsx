@@ -640,37 +640,208 @@ export default function HomePage() {
       </section>
 
       {/* ═══════════════════════════════════════════ */}
-      {/*         BENTO GRID SERVICES                */}
+      {/*     PREMIUM EDITORIAL SERVICES SECTION      */}
       {/* ═══════════════════════════════════════════ */}
-      <section className="section-padding bg-gradient-to-b from-transparent via-indigo-500/[0.02] to-transparent">
-        <div className="max-w-6xl mx-auto">
-          <FadeIn><p className="text-sm font-medium text-indigo-400 tracking-widest uppercase mb-4 text-center">What we offer</p></FadeIn>
+      <section className="py-20 sm:py-28 bg-[#FFFDF9] relative overflow-hidden">
+        {/* Subtle warm ambient */}
+        <div className="absolute top-[20%] left-[40%] w-[30vw] h-[30vw] rounded-full bg-orange-100/20 blur-[120px] pointer-events-none select-none" />
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Section Header */}
+          <FadeIn>
+            <div className="flex items-center justify-center gap-3 mb-6">
+              <div className="h-px w-10 bg-gradient-to-r from-transparent to-[#D9791A]/40" />
+              <p className="text-sm font-bold text-[#D9791A] tracking-[0.2em] uppercase">What we offer</p>
+              <div className="h-px w-10 bg-gradient-to-l from-transparent to-[#D9791A]/40" />
+            </div>
+          </FadeIn>
           <FadeIn delay={0.05}>
-            <h2 className="font-[family-name:var(--font-outfit)] text-4xl sm:text-5xl md:text-6xl font-bold text-center mb-6 leading-tight">
-              Investment <span className="gradient-text">Solutions</span>
+            <h2 className="font-[family-name:var(--font-serif)] text-4xl sm:text-5xl md:text-[3.5rem] font-bold text-center mb-5 leading-tight text-[#10141F]">
+              Solutions Designed for{" "}
+              <span className="bg-gradient-to-r from-[#E8A33D] to-[#C9670A] bg-clip-text text-transparent">Your Financial Growth</span>
             </h2>
           </FadeIn>
-          <FadeIn delay={0.1}><p className="text-lg text-slate-600 text-center max-w-2xl mx-auto mb-16 font-normal">Comprehensive financial products tailored to your goals, risk appetite, and investment horizon.</p></FadeIn>
+          <FadeIn delay={0.1}>
+            <p className="text-base sm:text-lg text-[#5B5955] text-center max-w-2xl mx-auto mb-16 sm:mb-20 font-normal leading-relaxed">
+              We provide a wide range of financial solutions tailored to your goals.<br className="hidden sm:inline" />
+              Simple, transparent, and focused on building long-term wealth.
+            </p>
+          </FadeIn>
 
-          {/* Bento Grid — 2 large + 4 small */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-            {services.map((s, i) => (
-              <FadeIn key={s.slug} delay={i * 0.06}>
-                <Link href={`/services/${s.slug}`}
-                  className={`block glass bento-glow glass-hover rounded-3xl p-8 h-full group relative overflow-hidden ${i < 2 ? "lg:row-span-1" : ""}`}>
-                  {/* Accent line */}
-                  <div className="absolute top-0 left-8 right-8 h-px bg-gradient-to-r from-transparent via-indigo-500/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                  <div className="w-14 h-14 rounded-2xl bg-indigo-500/8 border border-indigo-500/10 flex items-center justify-center mb-6 text-indigo-400 group-hover:bg-indigo-500/15 group-hover:border-indigo-500/25 transition-all duration-400">
-                    {svcIcons[s.icon] || svcIcons["bar-chart-2"]}
+          {/* Hub-and-Spoke Layout */}
+          <div className="relative">
+            {/* ── DESKTOP LAYOUT (lg+) ── */}
+            <div className="hidden lg:grid lg:grid-cols-[1fr_auto_1fr] lg:items-center lg:gap-0">
+
+              {/* LEFT COLUMN — Equity, ETFs, Mutual Funds */}
+              <div className="flex flex-col gap-14 pr-8">
+                {/* Service 1: Equity */}
+                <FadeIn delay={0.05}>
+                  <Link href="/services/equity" className="group flex items-start gap-4 text-right flex-row-reverse">
+                    <div className="w-12 h-12 rounded-full bg-orange-50 border border-orange-100 flex items-center justify-center text-[#D9791A] shrink-0 group-hover:bg-orange-100 transition-colors">
+                      <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z" /></svg>
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="font-[family-name:var(--font-outfit)] text-base font-bold text-[#10141F] mb-1 group-hover:text-[#D9791A] transition-colors">Equity</h3>
+                      <p className="text-xs text-[#5B5955] leading-relaxed">We assist you in your equity investment journey by helping you access tools, research insights, and educational content available through our partner Angel One.</p>
+                    </div>
+                  </Link>
+                </FadeIn>
+
+                {/* Service 2: ETFs */}
+                <FadeIn delay={0.1}>
+                  <Link href="/services/etfs" className="group flex items-start gap-4 text-right flex-row-reverse">
+                    <div className="w-12 h-12 rounded-full bg-orange-50 border border-orange-100 flex items-center justify-center text-[#D9791A] shrink-0 group-hover:bg-orange-100 transition-colors">
+                      <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="m6.115 5.19.319 1.913A6 6 0 0 0 8.11 10.36L9.75 12l-.387.775c-.217.433-.132.956.21 1.298l1.348 1.348c.21.21.329.497.329.795v1.089c0 .426.24.815.622 1.006l.153.076c.433.217.956.132 1.298-.21l.723-.723a8.7 8.7 0 0 0 2.288-4.042 1.087 1.087 0 0 0-.358-1.099l-1.33-1.108c-.251-.21-.582-.299-.905-.245l-1.17.195a1.125 1.125 0 0 1-.98-.314l-.295-.295a1.125 1.125 0 0 1 0-1.591l.13-.132a1.125 1.125 0 0 1 1.3-.21l.603.302a.809.809 0 0 0 1.086-1.086L14.25 7.5l1.256-.837a4.5 4.5 0 0 0 1.528-1.732l.146-.292M6.115 5.19A9 9 0 1 0 17.18 4.64M6.115 5.19A8.965 8.965 0 0 1 12 3c1.929 0 3.716.607 5.18 1.64" /></svg>
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="font-[family-name:var(--font-outfit)] text-base font-bold text-[#10141F] mb-1 group-hover:text-[#D9791A] transition-colors">ETFs (Exchange Traded Funds)</h3>
+                      <p className="text-xs text-[#5B5955] leading-relaxed">Looking for low-cost, diversified investment options? We guide you in selecting the right ETFs.</p>
+                    </div>
+                  </Link>
+                </FadeIn>
+
+                {/* Service 3: Mutual Funds */}
+                <FadeIn delay={0.15}>
+                  <Link href="/services/mutual-funds" className="group flex items-start gap-4 text-right flex-row-reverse">
+                    <div className="w-12 h-12 rounded-full bg-orange-50 border border-orange-100 flex items-center justify-center text-[#D9791A] shrink-0 group-hover:bg-orange-100 transition-colors">
+                      <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M10.5 6a7.5 7.5 0 1 0 7.5 7.5h-7.5V6Z" /><path strokeLinecap="round" strokeLinejoin="round" d="M13.5 10.5H21A7.5 7.5 0 0 0 13.5 3v7.5Z" /></svg>
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="font-[family-name:var(--font-outfit)] text-base font-bold text-[#10141F] mb-1 group-hover:text-[#D9791A] transition-colors">Mutual Funds</h3>
+                      <p className="text-xs text-[#5B5955] leading-relaxed">We offer end-to-end support for mutual fund investments, right from risk profiling to portfolio selection.</p>
+                    </div>
+                  </Link>
+                </FadeIn>
+              </div>
+
+              {/* CENTER — Illustration with connector lines */}
+              <div className="relative flex items-center justify-center w-[320px] h-[420px]">
+                {/* Soft radial glow behind illustration */}
+                <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none">
+                  <div className="w-64 h-64 rounded-full bg-gradient-radial from-orange-100/40 via-orange-50/20 to-transparent blur-[40px]" />
+                </div>
+
+                {/* Left connector lines with accent dots */}
+                <div className="absolute left-0 top-[15%] w-10 h-px bg-gradient-to-r from-[#E7E1D8] to-[#D9791A]/20">
+                  <div className="absolute -left-1 -top-[3px] w-2 h-2 rounded-full bg-[#D9791A]/60" />
+                </div>
+                <div className="absolute left-0 top-1/2 w-10 h-px bg-gradient-to-r from-[#E7E1D8] to-[#D9791A]/20 -translate-y-1/2">
+                  <div className="absolute -left-1 -top-[3px] w-2 h-2 rounded-full bg-[#D9791A]/60" />
+                </div>
+                <div className="absolute left-0 bottom-[15%] w-10 h-px bg-gradient-to-r from-[#E7E1D8] to-[#D9791A]/20">
+                  <div className="absolute -left-1 -top-[3px] w-2 h-2 rounded-full bg-[#D9791A]/60" />
+                </div>
+
+                {/* Right connector lines with accent dots */}
+                <div className="absolute right-0 top-[15%] w-10 h-px bg-gradient-to-l from-[#E7E1D8] to-[#D9791A]/20">
+                  <div className="absolute -right-1 -top-[3px] w-2 h-2 rounded-full bg-[#D9791A]/60" />
+                </div>
+                <div className="absolute right-0 top-1/2 w-10 h-px bg-gradient-to-l from-[#E7E1D8] to-[#D9791A]/20 -translate-y-1/2">
+                  <div className="absolute -right-1 -top-[3px] w-2 h-2 rounded-full bg-[#D9791A]/60" />
+                </div>
+                <div className="absolute right-0 bottom-[15%] w-10 h-px bg-gradient-to-l from-[#E7E1D8] to-[#D9791A]/20">
+                  <div className="absolute -right-1 -top-[3px] w-2 h-2 rounded-full bg-[#D9791A]/60" />
+                </div>
+
+                {/* Center Illustration */}
+                <FadeIn delay={0.1}>
+                  <div className="relative w-56 h-56 rounded-full bg-gradient-to-br from-white via-[#FFFDF9] to-orange-50/30 border border-orange-100/30 shadow-lg shadow-orange-100/20 flex items-center justify-center overflow-hidden">
+                    <Image
+                      src="/assets/images/finance-illustration.png"
+                      alt="Financial Solutions"
+                      width={180}
+                      height={180}
+                      className="object-contain drop-shadow-md"
+                    />
                   </div>
-                  <h3 className="font-[family-name:var(--font-outfit)] text-xl font-bold text-slate-900 mb-3 group-hover:text-indigo-600 transition-colors">{s.title}</h3>
-                  <p className="text-sm text-slate-600 leading-relaxed mb-5">{s.shortDescription}</p>
-                  <span className="inline-flex items-center gap-2 text-sm font-medium text-indigo-400 opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300">
-                    Learn more <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" /></svg>
-                  </span>
-                </Link>
+                </FadeIn>
+              </div>
+
+              {/* RIGHT COLUMN — Insurance, Bonds, Fixed Deposit */}
+              <div className="flex flex-col gap-14 pl-8">
+                {/* Service 4: Insurance */}
+                <FadeIn delay={0.05}>
+                  <Link href="/services/insurance" className="group flex items-start gap-4">
+                    <div className="w-12 h-12 rounded-full bg-orange-50 border border-orange-100 flex items-center justify-center text-[#D9791A] shrink-0 group-hover:bg-orange-100 transition-colors">
+                      <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" /></svg>
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="font-[family-name:var(--font-outfit)] text-base font-bold text-[#10141F] mb-1 group-hover:text-[#D9791A] transition-colors">Insurance</h3>
+                      <p className="text-xs text-[#5B5955] leading-relaxed">Protecting your wealth is as important as growing it. We assist you in choosing the right insurance products.</p>
+                    </div>
+                  </Link>
+                </FadeIn>
+
+                {/* Service 5: Bonds */}
+                <FadeIn delay={0.1}>
+                  <Link href="/services/bonds" className="group flex items-start gap-4">
+                    <div className="w-12 h-12 rounded-full bg-orange-50 border border-orange-100 flex items-center justify-center text-[#D9791A] shrink-0 group-hover:bg-orange-100 transition-colors">
+                      <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z" /></svg>
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="font-[family-name:var(--font-outfit)] text-base font-bold text-[#10141F] mb-1 group-hover:text-[#D9791A] transition-colors">Bonds</h3>
+                      <p className="text-xs text-[#5B5955] leading-relaxed">For conservative investors, we offer guidance on investing in fixed-income securities.</p>
+                    </div>
+                  </Link>
+                </FadeIn>
+
+                {/* Service 6: Fixed Deposit */}
+                <FadeIn delay={0.15}>
+                  <Link href="/services/fixed-deposit" className="group flex items-start gap-4">
+                    <div className="w-12 h-12 rounded-full bg-orange-50 border border-orange-100 flex items-center justify-center text-[#D9791A] shrink-0 group-hover:bg-orange-100 transition-colors">
+                      <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75Z" /></svg>
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="font-[family-name:var(--font-outfit)] text-base font-bold text-[#10141F] mb-1 group-hover:text-[#D9791A] transition-colors">Fixed Deposit</h3>
+                      <p className="text-xs text-[#5B5955] leading-relaxed">Fixed Deposits (FDs) are your go-to investment option for peace of mind and steady growth.</p>
+                    </div>
+                  </Link>
+                </FadeIn>
+              </div>
+            </div>
+
+            {/* ── MOBILE / TABLET LAYOUT (below lg) ── */}
+            <div className="lg:hidden">
+              {/* Center Illustration */}
+              <FadeIn delay={0.05}>
+                <div className="flex justify-center mb-12">
+                  <div className="relative w-44 h-44 sm:w-56 sm:h-56 rounded-full bg-gradient-to-br from-white via-[#FFFDF9] to-orange-50/30 border border-orange-100/30 shadow-lg shadow-orange-100/20 flex items-center justify-center overflow-hidden">
+                    <Image
+                      src="/assets/images/finance-illustration.png"
+                      alt="Financial Solutions"
+                      width={160}
+                      height={160}
+                      className="object-contain drop-shadow-md"
+                    />
+                  </div>
+                </div>
               </FadeIn>
-            ))}
+
+              {/* Services in a clean list */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-2xl mx-auto">
+                {[
+                  { href: "/services/equity", title: "Equity", desc: "We assist you in your equity investment journey by helping you access tools, research insights, and educational content.", icon: "bar-chart-2" },
+                  { href: "/services/insurance", title: "Insurance", desc: "Protecting your wealth is as important as growing it. We assist you in choosing the right insurance products.", icon: "shield-check" },
+                  { href: "/services/etfs", title: "ETFs", desc: "Looking for low-cost, diversified investment options? We guide you in selecting the right ETFs.", icon: "layers" },
+                  { href: "/services/bonds", title: "Bonds", desc: "For conservative investors, we offer guidance on investing in fixed-income securities.", icon: "lock" },
+                  { href: "/services/mutual-funds", title: "Mutual Funds", desc: "We offer end-to-end support for mutual fund investments, right from risk profiling to portfolio selection.", icon: "pie-chart" },
+                  { href: "/services/fixed-deposit", title: "Fixed Deposit", desc: "Fixed Deposits are your go-to investment option for peace of mind and steady growth.", icon: "landmark" },
+                ].map((s, i) => (
+                  <FadeIn key={s.href} delay={i * 0.06}>
+                    <Link href={s.href} className="group flex items-start gap-3.5">
+                      <div className="w-10 h-10 rounded-full bg-orange-50 border border-orange-100 flex items-center justify-center text-[#D9791A] shrink-0 group-hover:bg-orange-100 transition-colors">
+                        {svcIcons[s.icon]}
+                      </div>
+                      <div className="flex-1">
+                        <h3 className="font-[family-name:var(--font-outfit)] text-sm font-bold text-[#10141F] mb-0.5 group-hover:text-[#D9791A] transition-colors">{s.title}</h3>
+                        <p className="text-xs text-[#5B5955] leading-relaxed">{s.desc}</p>
+                      </div>
+                    </Link>
+                  </FadeIn>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>
