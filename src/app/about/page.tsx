@@ -83,7 +83,7 @@ export default function AboutPage() {
                 Who We Are
               </span>
               
-              <h1 className="font-[family-name:var(--font-outfit)] text-4xl sm:text-5xl lg:text-[3.5rem] font-bold text-[#10141F] leading-[1.1] tracking-tight">
+              <h1 className="font-[family-name:var(--font-serif)] text-4xl sm:text-5xl lg:text-[3.5rem] font-bold text-[#10141F] leading-[1.1] tracking-tight">
                 About <span className="gradient-text">Wealth Acumen</span>
               </h1>
 
@@ -92,7 +92,7 @@ export default function AboutPage() {
                   {aboutContent.intro}
                 </p>
                 <p>
-                  Our goal is to deliver personalized strategies, trusted insights, and ethical guidance to help you navigate your wealth journey with clarity and confidence. We believe in building long-term relationships based on transparency and mutual growth.
+                  Our focus is on delivering customized pathways, objective insights, and transparent guidance to help you navigate the markets successfully. We believe in fostering long-term partnerships built on integrity, accountability, and consistent growth.
                 </p>
               </div>
 
@@ -212,7 +212,7 @@ export default function AboutPage() {
               <p className="text-sm font-medium text-indigo-600 tracking-wider uppercase mb-3">
                 Our Purpose
               </p>
-              <h2 className="font-[family-name:var(--font-outfit)] text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900">
+              <h2 className="font-[family-name:var(--font-serif)] text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900">
                 Our <span className="gradient-text">Mission</span>
               </h2>
             </div>
@@ -243,7 +243,7 @@ export default function AboutPage() {
               <p className="text-sm font-medium text-cyan-600 tracking-wider uppercase mb-3">
                 Partnership
               </p>
-              <h2 className="font-[family-name:var(--font-outfit)] text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900">
+              <h2 className="font-[family-name:var(--font-serif)] text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900">
                 Angel One <span className="gradient-text">Channel Partner</span>
               </h2>
             </div>
@@ -285,7 +285,7 @@ export default function AboutPage() {
               <p className="text-sm font-medium text-amber-600 tracking-wider uppercase mb-3">
                 Meet the Founder
               </p>
-              <h2 className="font-[family-name:var(--font-outfit)] text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900">
+              <h2 className="font-[family-name:var(--font-serif)] text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900">
                 The Mind Behind <span className="gradient-text-amber">Wealth Acumen</span>
               </h2>
             </div>
