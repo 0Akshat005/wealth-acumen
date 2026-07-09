@@ -199,7 +199,7 @@ export default function HomePage() {
                   initial={{ opacity: 0, y: 30 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.15 }}
-                  className="font-[family-name:var(--font-serif)] text-[2.35rem] min-[380px]:text-[2.75rem] sm:text-6xl lg:text-[4.25rem] font-bold text-[#10141F] leading-[1.08] tracking-tight text-left"
+                  className="font-[family-name:var(--font-outfit)] text-[2.35rem] min-[380px]:text-[2.75rem] sm:text-6xl lg:text-[4.25rem] font-bold text-[#10141F] leading-[1.08] tracking-tight text-left"
                 >
                   Smart Investment. <br />
                   Stronger Future. <br />
@@ -426,7 +426,7 @@ export default function HomePage() {
             </p>
           </FadeIn>
           <FadeIn delay={0.06}>
-            <h2 className="font-[family-name:var(--font-serif)] text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-14 leading-tight text-slate-900">
+            <h2 className="font-[family-name:var(--font-outfit)] text-4xl sm:text-5xl md:text-6xl font-bold text-center mb-14 leading-tight text-slate-900">
               Built on <span className="text-[#D9791A]">Trust</span>, driven by <span className="text-[#1E614D]">Vision</span>
             </h2>
           </FadeIn>
@@ -656,7 +656,7 @@ export default function HomePage() {
             </div>
           </FadeIn>
           <FadeIn delay={0.05}>
-            <h2 className="font-[family-name:var(--font-serif)] text-4xl sm:text-5xl md:text-[3.5rem] font-bold text-center mb-5 leading-tight text-[#10141F]">
+            <h2 className="font-[family-name:var(--font-outfit)] text-4xl sm:text-5xl md:text-6xl font-bold text-center mb-5 leading-tight text-[#10141F]">
               Solutions Designed for{" "}
               <span className="bg-gradient-to-r from-[#E8A33D] to-[#C9670A] bg-clip-text text-transparent">Your Financial Growth</span>
             </h2>
@@ -862,7 +862,7 @@ export default function HomePage() {
             </p>
           </FadeIn>
           <FadeIn delay={0.05}>
-            <h2 className="font-[family-name:var(--font-serif)] text-4xl sm:text-5xl md:text-[3.5rem] font-bold text-center mb-16 leading-tight text-[#10141F]">
+            <h2 className="font-[family-name:var(--font-outfit)] text-4xl sm:text-5xl md:text-6xl font-bold text-center mb-16 leading-tight text-[#10141F]">
               Why investors{" "}
               <span className="bg-gradient-to-r from-[#E8A33D] to-[#C9670A] bg-clip-text text-transparent">
                 choose us
@@ -1262,7 +1262,7 @@ export default function HomePage() {
                   </div>
 
                   {/* Main Title Heading */}
-                  <h2 className="font-[family-name:var(--font-serif)] text-4xl sm:text-5xl lg:text-[3.25rem] font-bold text-slate-900 leading-[1.1] tracking-tight">
+                  <h2 className="font-[family-name:var(--font-outfit)] text-4xl sm:text-5xl lg:text-[3.25rem] font-bold text-slate-900 leading-[1.1] tracking-tight">
                     Ready to start your <br />
                     <span className="bg-gradient-to-r from-[#E8A33D] to-[#C9670A] bg-clip-text text-transparent">wealth journey?</span>
                   </h2>
