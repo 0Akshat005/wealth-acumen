@@ -66,9 +66,25 @@ export default function AboutPage() {
           <div className="absolute bottom-1/3 right-1/4 w-80 h-80 bg-[#FFFDF9] rounded-full blur-[120px] animate-pulse-glow" style={{ animationDelay: "2s" }} />
         </div>
 
+        {/* Immersive Independent Visual Background - fades and overlaps behind grid */}
+        <div className="absolute inset-y-0 right-0 w-full lg:w-[48%] z-0 pointer-events-none select-none overflow-hidden opacity-90">
+          <Image
+            src="/assets/images/about-hero-visual.jpg"
+            alt=""
+            fill
+            className="object-cover object-center"
+            priority
+          />
+          {/* 360-degree soft gradient disappearing masks to blend visual perfectly into #FFFDF9 */}
+          <div className="absolute inset-y-0 left-0 w-24 sm:w-48 bg-gradient-to-r from-[#FFFDF9] via-[#FFFDF9]/85 sm:via-[#FFFDF9]/60 to-transparent" />
+          <div className="absolute inset-y-0 right-0 w-16 sm:w-24 bg-gradient-to-l from-[#FFFDF9] to-transparent" />
+          <div className="absolute inset-x-0 top-0 h-24 sm:h-32 bg-gradient-to-b from-[#FFFDF9] via-[#FFFDF9]/40 to-transparent" />
+          <div className="absolute inset-x-0 bottom-0 h-24 sm:h-32 bg-gradient-to-t from-[#FFFDF9] via-[#FFFDF9]/40 to-transparent" />
+        </div>
+
         {/* Grid pattern */}
         <div
-          className="absolute inset-0 opacity-[0.01]"
+          className="absolute inset-0 opacity-[0.01] z-0 pointer-events-none"
           style={{
             backgroundImage:
               "linear-gradient(rgba(217, 121, 26, 0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(217, 121, 26, 0.03) 1px, transparent 1px)",
@@ -145,24 +161,8 @@ export default function AboutPage() {
               </div>
             </div>
 
-            {/* Right Column (45% width) with immersive disappearing visual */}
-            <div className="lg:col-span-5 relative w-full min-h-[380px] sm:min-h-[460px] lg:min-h-[500px] flex items-end justify-center lg:justify-end pb-6 lg:pb-0 z-10">
-              {/* Immersive Image Container */}
-              <div className="absolute inset-0 select-none pointer-events-none z-0 rounded-[32px] overflow-hidden">
-                <Image
-                  src="/assets/images/about-hero-visual.jpg"
-                  alt="Financial Growth Compass"
-                  fill
-                  className="object-cover object-center opacity-85"
-                  priority
-                />
-                {/* 360-degree soft gradient disappearing masks to blend visual perfectly into #FFFDF9 */}
-                <div className="absolute inset-y-0 left-0 w-24 sm:w-36 bg-gradient-to-r from-[#FFFDF9] via-[#FFFDF9]/60 to-transparent" />
-                <div className="absolute inset-y-0 right-0 w-16 sm:w-24 bg-gradient-to-l from-[#FFFDF9] to-transparent" />
-                <div className="absolute inset-x-0 top-0 h-24 sm:h-32 bg-gradient-to-b from-[#FFFDF9] via-[#FFFDF9]/40 to-transparent" />
-                <div className="absolute inset-x-0 bottom-0 h-24 sm:h-32 bg-gradient-to-t from-[#FFFDF9] via-[#FFFDF9]/40 to-transparent" />
-              </div>
-
+            {/* Right Column (45% width) - holds only the floating credentials card on top of background image */}
+            <div className="lg:col-span-5 relative w-full min-h-[340px] sm:min-h-[420px] lg:min-h-[460px] flex items-end justify-center lg:justify-end pb-6 lg:pb-0 z-10">
               {/* Overlapping Floating Credentials Card */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
