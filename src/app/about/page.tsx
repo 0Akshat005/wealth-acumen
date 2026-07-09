@@ -97,40 +97,40 @@ export default function AboutPage() {
                 </p>
               </div>
 
-              {/* Value Cards in 2x2 grid */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full pt-4">
+              {/* Value Cards in a single horizontal row on desktop */}
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-3.5 w-full pt-4">
                 {/* Card 1: Client First */}
-                <div className="flex flex-col bg-[#FFFDF9]/60 backdrop-blur-sm border border-orange-500/10 rounded-2xl p-4 sm:p-5 shadow-sm hover:shadow-md hover:border-orange-500/20 transition-all duration-300">
+                <div className="flex flex-col items-center text-center bg-[#FFFDF9]/60 backdrop-blur-sm border border-orange-500/10 rounded-2xl p-4 sm:p-5 shadow-sm hover:shadow-md hover:border-orange-500/20 transition-all duration-300">
                   <div className="w-10 h-10 rounded-full bg-orange-50 flex items-center justify-center text-[#D9791A] mb-3 shrink-0">
                     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
                     </svg>
                   </div>
-                  <h3 className="font-[family-name:var(--font-outfit)] text-sm font-bold text-slate-900 mb-1">
+                  <h3 className="font-[family-name:var(--font-outfit)] text-sm font-bold text-slate-900 mb-1 leading-tight">
                     Client First
                   </h3>
-                  <p className="text-xs text-slate-500 leading-normal">
+                  <p className="text-[11px] text-slate-500 leading-normal">
                     Your goals are our priority. We put your interests first.
                   </p>
                 </div>
 
                 {/* Card 2: Transparent Advice */}
-                <div className="flex flex-col bg-[#FFFDF9]/60 backdrop-blur-sm border border-orange-500/10 rounded-2xl p-4 sm:p-5 shadow-sm hover:shadow-md hover:border-orange-500/20 transition-all duration-300">
+                <div className="flex flex-col items-center text-center bg-[#FFFDF9]/60 backdrop-blur-sm border border-orange-500/10 rounded-2xl p-4 sm:p-5 shadow-sm hover:shadow-md hover:border-orange-500/20 transition-all duration-300">
                   <div className="w-10 h-10 rounded-full bg-orange-50 flex items-center justify-center text-[#D9791A] mb-3 shrink-0">
                     <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
                     </svg>
                   </div>
-                  <h3 className="font-[family-name:var(--font-outfit)] text-sm font-bold text-slate-900 mb-1">
+                  <h3 className="font-[family-name:var(--font-outfit)] text-sm font-bold text-slate-900 mb-1 leading-tight">
                     Transparent Advice
                   </h3>
-                  <p className="text-xs text-slate-500 leading-normal">
+                  <p className="text-[11px] text-slate-500 leading-normal">
                     Honest, unbiased and clear guidance you can always rely on.
                   </p>
                 </div>
 
                 {/* Card 3: Goal Based Approach */}
-                <div className="flex flex-col bg-[#FFFDF9]/60 backdrop-blur-sm border border-orange-500/10 rounded-2xl p-4 sm:p-5 shadow-sm hover:shadow-md hover:border-orange-500/20 transition-all duration-300">
+                <div className="flex flex-col items-center text-center bg-[#FFFDF9]/60 backdrop-blur-sm border border-orange-500/10 rounded-2xl p-4 sm:p-5 shadow-sm hover:shadow-md hover:border-orange-500/20 transition-all duration-300">
                   <div className="w-10 h-10 rounded-full bg-orange-50 flex items-center justify-center text-[#D9791A] mb-3 shrink-0">
                     <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                       <circle cx="12" cy="12" r="10" />
@@ -138,25 +138,25 @@ export default function AboutPage() {
                       <circle cx="12" cy="12" r="2" />
                     </svg>
                   </div>
-                  <h3 className="font-[family-name:var(--font-outfit)] text-sm font-bold text-slate-900 mb-1">
+                  <h3 className="font-[family-name:var(--font-outfit)] text-sm font-bold text-slate-900 mb-1 leading-tight">
                     Goal Based Approach
                   </h3>
-                  <p className="text-xs text-slate-500 leading-normal">
+                  <p className="text-[11px] text-slate-500 leading-normal">
                     Personalized strategies designed around your dreams and needs.
                   </p>
                 </div>
 
                 {/* Card 4: Long Term Growth */}
-                <div className="flex flex-col bg-[#FFFDF9]/60 backdrop-blur-sm border border-orange-500/10 rounded-2xl p-4 sm:p-5 shadow-sm hover:shadow-md hover:border-orange-500/20 transition-all duration-300">
+                <div className="flex flex-col items-center text-center bg-[#FFFDF9]/60 backdrop-blur-sm border border-orange-500/10 rounded-2xl p-4 sm:p-5 shadow-sm hover:shadow-md hover:border-orange-500/20 transition-all duration-300">
                   <div className="w-10 h-10 rounded-full bg-orange-50 flex items-center justify-center text-[#D9791A] mb-3 shrink-0">
                     <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 18 9 11.25l4.306 4.306a11.95 11.95 0 0 1 5.814-5.518l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941" />
                     </svg>
                   </div>
-                  <h3 className="font-[family-name:var(--font-outfit)] text-sm font-bold text-slate-900 mb-1">
+                  <h3 className="font-[family-name:var(--font-outfit)] text-sm font-bold text-slate-900 mb-1 leading-tight">
                     Long Term Growth
                   </h3>
-                  <p className="text-xs text-slate-500 leading-normal">
+                  <p className="text-[11px] text-slate-500 leading-normal">
                     Focused on creating sustainable wealth and financial independence.
                   </p>
                 </div>
