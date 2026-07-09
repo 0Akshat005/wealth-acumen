@@ -59,7 +59,7 @@ export default function AboutPage() {
   return (
     <>
       {/* ═══ HERO ═══ */}
-      <section className="relative overflow-hidden pt-28 pb-16 bg-[#FFFDF9]">
+      <section className="relative overflow-hidden pt-36 pb-20 sm:pt-40 sm:pb-24 bg-[#FFFDF9]">
         {/* Background effects */}
         <div className="absolute inset-0 select-none pointer-events-none z-0">
           <div className="absolute top-1/4 left-1/3 w-96 h-96 bg-orange-50/40 rounded-full blur-[120px] animate-pulse-glow" />
