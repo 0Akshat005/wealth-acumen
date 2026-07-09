@@ -62,16 +62,16 @@ export default function AboutPage() {
       <section className="relative overflow-hidden pt-28 pb-16 bg-[#FFFDF9]">
         {/* Background effects */}
         <div className="absolute inset-0 select-none pointer-events-none z-0">
-          <div className="absolute top-1/4 left-1/3 w-96 h-96 bg-orange-100/30 rounded-full blur-[128px] animate-pulse-glow" />
-          <div className="absolute bottom-1/3 right-1/4 w-80 h-80 bg-[#FFFDF9] rounded-full blur-[128px] animate-pulse-glow" style={{ animationDelay: "2s" }} />
+          <div className="absolute top-1/4 left-1/3 w-96 h-96 bg-orange-50/40 rounded-full blur-[120px] animate-pulse-glow" />
+          <div className="absolute bottom-1/3 right-1/4 w-80 h-80 bg-[#FFFDF9] rounded-full blur-[120px] animate-pulse-glow" style={{ animationDelay: "2s" }} />
         </div>
 
         {/* Grid pattern */}
         <div
-          className="absolute inset-0 opacity-[0.02]"
+          className="absolute inset-0 opacity-[0.01]"
           style={{
             backgroundImage:
-              "linear-gradient(rgba(217, 121, 26, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(217, 121, 26, 0.05) 1px, transparent 1px)",
+              "linear-gradient(rgba(217, 121, 26, 0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(217, 121, 26, 0.03) 1px, transparent 1px)",
             backgroundSize: "64px 64px",
           }}
         />
@@ -97,66 +97,48 @@ export default function AboutPage() {
                 </p>
               </div>
 
-              {/* Value Cards in a single horizontal row on desktop */}
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-3.5 w-full pt-4">
-                {/* Card 1: Client First */}
-                <div className="flex flex-col items-center text-center bg-[#FFFDF9]/60 backdrop-blur-sm border border-orange-500/10 rounded-2xl p-4 sm:p-5 shadow-sm hover:shadow-md hover:border-orange-500/20 transition-all duration-300">
-                  <div className="w-10 h-10 rounded-full bg-orange-50 flex items-center justify-center text-[#D9791A] mb-3 shrink-0">
-                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
-                    </svg>
-                  </div>
-                  <h3 className="font-[family-name:var(--font-outfit)] text-sm font-bold text-slate-900 mb-1 leading-tight">
+              {/* Trust Pillars - Minimal & Luxurious Typographic Layout */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 w-full pt-8 border-t border-slate-200/60 mt-8">
+                {/* Pillar 1 */}
+                <div className="flex flex-col space-y-2">
+                  <span className="font-[family-name:var(--font-serif)] text-2xl font-light text-[#D9791A] leading-none">01</span>
+                  <h3 className="font-[family-name:var(--font-outfit)] text-sm font-bold text-slate-900">
                     Client First
                   </h3>
-                  <p className="text-[11px] text-slate-500 leading-normal">
+                  <p className="text-xs text-[#5B5955] leading-relaxed">
                     Your goals are our priority. We put your interests first.
                   </p>
                 </div>
-
-                {/* Card 2: Transparent Advice */}
-                <div className="flex flex-col items-center text-center bg-[#FFFDF9]/60 backdrop-blur-sm border border-orange-500/10 rounded-2xl p-4 sm:p-5 shadow-sm hover:shadow-md hover:border-orange-500/20 transition-all duration-300">
-                  <div className="w-10 h-10 rounded-full bg-orange-50 flex items-center justify-center text-[#D9791A] mb-3 shrink-0">
-                    <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
-                    </svg>
-                  </div>
-                  <h3 className="font-[family-name:var(--font-outfit)] text-sm font-bold text-slate-900 mb-1 leading-tight">
+                
+                {/* Pillar 2 */}
+                <div className="flex flex-col space-y-2">
+                  <span className="font-[family-name:var(--font-serif)] text-2xl font-light text-[#D9791A] leading-none">02</span>
+                  <h3 className="font-[family-name:var(--font-outfit)] text-sm font-bold text-slate-900">
                     Transparent Advice
                   </h3>
-                  <p className="text-[11px] text-slate-500 leading-normal">
+                  <p className="text-xs text-[#5B5955] leading-relaxed">
                     Honest, unbiased and clear guidance you can always rely on.
                   </p>
                 </div>
-
-                {/* Card 3: Goal Based Approach */}
-                <div className="flex flex-col items-center text-center bg-[#FFFDF9]/60 backdrop-blur-sm border border-orange-500/10 rounded-2xl p-4 sm:p-5 shadow-sm hover:shadow-md hover:border-orange-500/20 transition-all duration-300">
-                  <div className="w-10 h-10 rounded-full bg-orange-50 flex items-center justify-center text-[#D9791A] mb-3 shrink-0">
-                    <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                      <circle cx="12" cy="12" r="10" />
-                      <circle cx="12" cy="12" r="6" />
-                      <circle cx="12" cy="12" r="2" />
-                    </svg>
-                  </div>
-                  <h3 className="font-[family-name:var(--font-outfit)] text-sm font-bold text-slate-900 mb-1 leading-tight">
+                
+                {/* Pillar 3 */}
+                <div className="flex flex-col space-y-2">
+                  <span className="font-[family-name:var(--font-serif)] text-2xl font-light text-[#D9791A] leading-none">03</span>
+                  <h3 className="font-[family-name:var(--font-outfit)] text-sm font-bold text-slate-900">
                     Goal Based Approach
                   </h3>
-                  <p className="text-[11px] text-slate-500 leading-normal">
+                  <p className="text-xs text-[#5B5955] leading-relaxed">
                     Personalized strategies designed around your dreams and needs.
                   </p>
                 </div>
-
-                {/* Card 4: Long Term Growth */}
-                <div className="flex flex-col items-center text-center bg-[#FFFDF9]/60 backdrop-blur-sm border border-orange-500/10 rounded-2xl p-4 sm:p-5 shadow-sm hover:shadow-md hover:border-orange-500/20 transition-all duration-300">
-                  <div className="w-10 h-10 rounded-full bg-orange-50 flex items-center justify-center text-[#D9791A] mb-3 shrink-0">
-                    <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 18 9 11.25l4.306 4.306a11.95 11.95 0 0 1 5.814-5.518l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941" />
-                    </svg>
-                  </div>
-                  <h3 className="font-[family-name:var(--font-outfit)] text-sm font-bold text-slate-900 mb-1 leading-tight">
+                
+                {/* Pillar 4 */}
+                <div className="flex flex-col space-y-2">
+                  <span className="font-[family-name:var(--font-serif)] text-2xl font-light text-[#D9791A] leading-none">04</span>
+                  <h3 className="font-[family-name:var(--font-outfit)] text-sm font-bold text-slate-900">
                     Long Term Growth
                   </h3>
-                  <p className="text-[11px] text-slate-500 leading-normal">
+                  <p className="text-xs text-[#5B5955] leading-relaxed">
                     Focused on creating sustainable wealth and financial independence.
                   </p>
                 </div>
@@ -168,7 +150,7 @@ export default function AboutPage() {
               {/* Main Visual Image */}
               <div className="relative w-full aspect-[4/3] rounded-[24px] overflow-hidden border border-[#E7E1D8] shadow-lg bg-white">
                 <Image
-                  src="/assets/images/about-hero-visual-v2.png"
+                  src="/assets/images/about-hero-visual.jpg"
                   alt="Financial Growth Compass"
                   fill
                   className="object-cover"
@@ -181,10 +163,10 @@ export default function AboutPage() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
-                className="w-full max-w-[360px] rounded-[24px] border border-[#E7E1D8] shadow-xl shadow-orange-950/[0.04] bg-[#FFFDF9] p-6 mt-6 lg:mt-0 lg:absolute lg:-bottom-6 lg:-right-6 z-20"
+                className="w-full max-w-[340px] rounded-[24px] border border-orange-500/10 shadow-xl shadow-orange-950/[0.03] bg-[#FFFDF9]/95 backdrop-blur-md p-6 mt-6 lg:mt-0 lg:absolute lg:bottom-4 lg:-right-10 z-20"
               >
                 <div className="flex justify-between items-center mb-5">
-                  <span className="font-[family-name:var(--font-outfit)] text-sm font-bold text-[#D9791A] uppercase tracking-wider">
+                  <span className="font-[family-name:var(--font-outfit)] text-xs font-bold text-[#D9791A] uppercase tracking-wider">
                     Our Credentials
                   </span>
                   <div className="w-7 h-7 rounded-lg bg-orange-50 border border-orange-100 flex items-center justify-center text-[#D9791A]">
@@ -194,7 +176,7 @@ export default function AboutPage() {
                   </div>
                 </div>
 
-                <div className="flex flex-col space-y-3.5 mb-6 text-xs text-slate-600">
+                <div className="flex flex-col space-y-3.5 mb-6 text-xs text-[#5B5955]">
                   <div className="flex justify-between items-center pb-2 border-b border-slate-100">
                     <span className="text-slate-500 font-medium">AMFI Registration</span>
                     <span className="font-semibold text-slate-800">ARN-{brand.amfiRegNo}</span>
@@ -223,8 +205,6 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-
-
 
       {/* ═══ OUR MISSION ═══ */}
       <section className="section-padding bg-gradient-to-b from-transparent via-indigo-500/[0.02] to-transparent">
