@@ -67,7 +67,7 @@ export default function AboutPage() {
         </div>
 
         {/* Immersive Independent Visual Background - fades and overlaps behind grid */}
-        <div className="absolute inset-y-0 right-0 w-full lg:w-[48%] z-0 pointer-events-none select-none overflow-hidden opacity-90">
+        <div className="absolute inset-x-0 bottom-0 h-[320px] sm:h-[400px] lg:inset-y-0 lg:right-0 lg:left-auto lg:w-[48%] lg:h-full z-0 pointer-events-none select-none overflow-hidden opacity-90">
           <Image
             src="/assets/images/about-hero-visual.jpg"
             alt=""

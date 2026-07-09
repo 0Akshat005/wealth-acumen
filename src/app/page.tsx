@@ -76,7 +76,9 @@ export default function HomePage() {
   useEffect(() => {
     const isDismissed = sessionStorage.getItem("wealth_acumen_scroll_alert_dismissed");
     if (isDismissed) {
-      setScrollAlertDismissed(true);
+      setTimeout(() => {
+        setScrollAlertDismissed(true);
+      }, 0);
     }
   }, []);
 

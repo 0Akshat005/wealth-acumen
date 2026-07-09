@@ -70,7 +70,9 @@ export function Navbar() {
   useEffect(() => {
     const dismissed = localStorage.getItem("wealth_acumen_announcement_dismissed");
     if (!dismissed) {
-      setShowAnnouncement(true);
+      setTimeout(() => {
+        setShowAnnouncement(true);
+      }, 0);
     }
   }, []);
 

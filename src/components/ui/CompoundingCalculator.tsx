@@ -12,7 +12,9 @@ export function CompoundingCalculator() {
   // Sync delayYears when tenure years is updated
   useEffect(() => {
     if (delayYears >= years && years > 1) {
-      setDelayYears(years - 1);
+      setTimeout(() => {
+        setDelayYears(years - 1);
+      }, 0);
     }
   }, [years, delayYears]);
 
@@ -290,7 +292,7 @@ export function CompoundingCalculator() {
                   {formatCurrency(delayResult.requiredSipToCatchUp)} <span className="text-xs sm:text-sm font-normal text-slate-500">/ month</span>
                 </p>
                 <p className="text-xs text-amber-800 font-semibold mt-2.5 bg-amber-100/30 px-3 py-1.5 rounded-lg border border-amber-200/30">
-                  ⚠️ That's an extra <strong>{formatCurrency(delayResult.sipPremium)}/month</strong> (+{Math.round((delayResult.sipPremium / monthlyInvestment) * 100)}% higher commitment) for the remaining {years - delayYears} years.
+                  ⚠️ That&apos;s an extra <strong>{formatCurrency(delayResult.sipPremium)}/month</strong> (+{Math.round((delayResult.sipPremium / monthlyInvestment) * 100)}% higher commitment) for the remaining {years - delayYears} years.
                 </p>
               </div>
               <div className="mt-6 flex flex-col sm:flex-row items-center gap-3 border-t border-amber-100/50 pt-4">
