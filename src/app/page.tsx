@@ -106,7 +106,7 @@ export default function HomePage() {
       {/* ═══════════════════════════════════════════ */}
       {/*              CINEMATIC HERO                */}
       {/* ═══════════════════════════════════════════ */}
-                  <section ref={heroRef} className="relative min-h-[100dvh] pt-24 pb-12 sm:pt-28 sm:pb-16 flex items-center justify-center bg-[#FCF9F4] overflow-x-hidden">
+                  <section ref={heroRef} className="relative min-h-[100dvh] pt-24 pb-12 sm:pt-36 sm:pb-16 flex items-center justify-center bg-[#FCF9F4] overflow-x-hidden">
         {/* Full-bleed golden hour desk skyline background */}
         <div className="absolute inset-0 select-none pointer-events-none z-0">
           <Image
