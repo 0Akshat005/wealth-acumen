@@ -370,7 +370,7 @@ export default function HomePage() {
             <div key={rep} className="flex items-center gap-12 shrink-0">
               {["AMFI Registered Distributor", "ARN 247468", "EUIN E459104", "Channel Partner of Angel One", "SEBI Compliant", "Serving All India", "NISM Certified Analyst", "4+ Years Market Experience"].map((text, i) => (
                 <div key={i} className="flex items-center gap-3 text-sm text-slate-600 whitespace-nowrap font-medium">
-                  <svg className="w-4 h-4 text-indigo-500 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>
+                  <svg className="w-4 h-4 text-[#D9791A] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>
                   {text}
                 </div>
               ))}
@@ -421,7 +421,7 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
           {/* Header */}
           <FadeIn>
-            <p className="text-[10px] sm:text-xs font-bold text-indigo-500 tracking-[0.25em] uppercase mb-4 text-center">
+            <p className="text-[10px] sm:text-xs font-bold text-[#D9791A] tracking-[0.25em] uppercase mb-4 text-center">
               THE PROMISE WE MAKE
             </p>
           </FadeIn>
@@ -439,7 +439,7 @@ export default function HomePage() {
                 whileHover={{ y: -4 }}
                 transition={{ duration: 0.3 }}
                 className="bg-white rounded-3xl border border-slate-100 shadow-xl shadow-slate-200/60 overflow-hidden"
-                style={{ borderBottom: "6px solid #5E3F97" }}
+                style={{ borderBottom: "6px solid #D9791A" }}
               >
                 <div className="flex flex-col sm:flex-row items-center sm:items-start gap-0 p-6 sm:p-8">
 
@@ -519,7 +519,7 @@ export default function HomePage() {
                     </div>
                     <ul className="space-y-3 text-left">
                       {[
-                        { color: "bg-[#EDE9FE] text-[#5E3F97] border-[#C4B5FD]", emoji: "🛡", label: "Empowering Indian Investors" },
+                        { color: "bg-orange-50 text-[#D9791A] border-orange-200", emoji: "🛡", label: "Empowering Indian Investors" },
                         { color: "bg-rose-50 text-rose-600 border-rose-200", emoji: "📈", label: "Personalized Strategies" },
                         { color: "bg-red-50 text-red-600 border-red-200", emoji: "🎯", label: "Goal-Oriented Wealth" },
                         { color: "bg-slate-100 text-slate-700 border-slate-200", emoji: "🎓", label: "Financial Confidence" },
@@ -1174,7 +1174,7 @@ export default function HomePage() {
                 <div key={i} className="w-[300px] sm:w-[400px] md:w-[450px] shrink-0 glass bento-glow glass-hover rounded-3xl p-8 md:p-10 relative flex flex-col justify-between">
                   <div>
                     {/* Large quote mark */}
-                    <svg className="absolute top-8 right-8 w-16 h-16 text-indigo-500/[0.06]" fill="currentColor" viewBox="0 0 24 24">
+                    <svg className="absolute top-8 right-8 w-16 h-16 text-[#D9791A]/[0.06]" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
                     </svg>
                     {/* Stars */}
@@ -1188,7 +1188,7 @@ export default function HomePage() {
                     <p className="text-slate-700 font-medium leading-relaxed mb-8 text-sm sm:text-[15px]">&ldquo;{t.text}&rdquo;</p>
                   </div>
                   <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 rounded-full bg-gradient-to-br from-indigo-500 to-cyan-500 flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-indigo-500/20">
+                    <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#E8A33D] to-[#C9670A] flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-orange-500/20">
                       {t.name.charAt(0)}
                     </div>
                     <div>
@@ -1208,7 +1208,7 @@ export default function HomePage() {
       {/* ═══════════════════════════════════════════ */}
       <section id="calculator" className="section-padding">
         <div className="max-w-6xl mx-auto">
-          <FadeIn><p className="text-sm font-medium text-indigo-400 tracking-widest uppercase mb-4 text-center">Interactive Tool</p></FadeIn>
+          <FadeIn><p className="text-sm font-medium text-[#D9791A] tracking-widest uppercase mb-4 text-center">Interactive Tool</p></FadeIn>
           <FadeIn delay={0.05}>
             <h2 className="font-[family-name:var(--font-outfit)] text-4xl sm:text-5xl md:text-6xl font-bold text-center mb-6 leading-tight">
               The power of <span className="gradient-text">compounding</span>
@@ -1229,7 +1229,7 @@ export default function HomePage() {
           <FadeIn>
             <div className="relative rounded-[2.5rem] bg-white border border-slate-100 shadow-xl shadow-slate-200/50 p-8 sm:p-12 lg:p-16 overflow-hidden">
               {/* Subtle Ambient Background Decorative Shapes */}
-              <div className="absolute top-0 right-0 w-[40%] h-[40%] bg-indigo-50/30 rounded-full blur-[100px] pointer-events-none" />
+              <div className="absolute top-0 right-0 w-[40%] h-[40%] bg-orange-50/20 rounded-full blur-[100px] pointer-events-none" />
               <div className="absolute bottom-0 left-0 w-[30%] h-[30%] bg-cyan-50/20 rounded-full blur-[100px] pointer-events-none" />
 
               <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -1414,9 +1414,9 @@ export default function HomePage() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 50, scale: 0.95 }}
             transition={{ type: "spring", damping: 25, stiffness: 200 }}
-            className="fixed bottom-6 left-6 z-40 max-w-sm w-[calc(100vw-3rem)] glass rounded-3xl p-5 border border-slate-200/80 shadow-2xl shadow-indigo-900/[0.08] font-sans flex items-start gap-4"
+            className="fixed bottom-6 left-6 z-40 max-w-sm w-[calc(100vw-3rem)] glass rounded-3xl p-5 border border-slate-200/80 shadow-2xl shadow-orange-950/[0.05] font-sans flex items-start gap-4"
           >
-            <div className="w-10 h-10 rounded-2xl bg-indigo-50 border border-indigo-100 flex items-center justify-center text-indigo-500 shrink-0 mt-0.5 shadow-sm">
+            <div className="w-10 h-10 rounded-2xl bg-orange-50 border border-orange-100 flex items-center justify-center text-[#D9791A] shrink-0 mt-0.5 shadow-sm">
               <svg className="w-5 h-5 animate-pulse" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
@@ -1426,7 +1426,7 @@ export default function HomePage() {
                 Procrastination is expensive!
               </h4>
               <p className="text-xs text-slate-600 leading-relaxed mt-1">
-                Delaying a ₹10,000 monthly SIP by just 1 year could cost you over <strong className="text-indigo-600 font-bold">₹5,00,000</strong> in lost potential compound wealth.
+                Delaying a ₹10,000 monthly SIP by just 1 year could cost you over <strong className="text-[#C75A00] font-bold">₹5,00,000</strong> in lost potential compound wealth.
               </p>
               <div className="flex items-center gap-3 mt-3">
                 <a
@@ -1435,7 +1435,7 @@ export default function HomePage() {
                     e.preventDefault();
                     document.getElementById("calculator")?.scrollIntoView({ behavior: "smooth" });
                   }}
-                  className="text-xs font-bold text-indigo-600 hover:text-indigo-700 transition-colors"
+                  className="text-xs font-bold text-[#C75A00] hover:text-orange-850 transition-colors"
                 >
                   Calculate Loss
                 </a>

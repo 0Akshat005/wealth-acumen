@@ -39,7 +39,7 @@ export default function DIYPage() {
         {/* Background effects */}
         <div className="absolute inset-0">
           <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-amber-500/8 rounded-full blur-[128px] animate-pulse-glow" />
-          <div className="absolute bottom-1/3 right-1/3 w-80 h-80 bg-indigo-500/10 rounded-full blur-[128px] animate-pulse-glow" style={{ animationDelay: "2s" }} />
+          <div className="absolute bottom-1/3 right-1/3 w-80 h-80 bg-orange-500/8 rounded-full blur-[128px] animate-pulse-glow" style={{ animationDelay: "2s" }} />
         </div>
 
         <div

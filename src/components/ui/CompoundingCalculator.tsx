@@ -88,7 +88,7 @@ export function CompoundingCalculator() {
               <label className="text-sm font-semibold text-slate-700">
                 Monthly Investment (SIP)
               </label>
-              <span className="text-sm font-bold text-indigo-600">
+              <span className="text-sm font-bold text-[#D9791A]">
                 {formatCurrency(monthlyInvestment)}
               </span>
             </div>
@@ -186,8 +186,8 @@ export function CompoundingCalculator() {
               />
               <defs>
                 <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                  <stop offset="0%" stopColor="#6366F1" />
-                  <stop offset="100%" stopColor="#06B6D4" />
+                  <stop offset="0%" stopColor="#E8A33D" />
+                  <stop offset="100%" stopColor="#C9670A" />
                 </linearGradient>
               </defs>
             </svg>
@@ -201,9 +201,9 @@ export function CompoundingCalculator() {
 
           {/* Breakdown */}
           <div className="w-full space-y-4">
-            <div className="flex items-center justify-between p-3 rounded-xl bg-indigo-50/50 border border-indigo-100">
+            <div className="flex items-center justify-between p-3 rounded-xl bg-orange-50/50 border border-orange-100">
               <div className="flex items-center gap-2">
-                <div className="w-3 h-3 rounded-full bg-indigo-500" />
+                <div className="w-3 h-3 rounded-full bg-[#D9791A]" />
                 <span className="text-sm text-slate-700 font-medium">Invested Amount</span>
               </div>
               <span className="text-sm font-bold text-slate-900">
@@ -243,7 +243,7 @@ export function CompoundingCalculator() {
                   onClick={() => setDelayYears(d)}
                   className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-all cursor-pointer ${
                     delayYears === d
-                      ? "bg-indigo-600 text-white shadow-sm"
+                      ? "bg-[#D9791A] text-white shadow-sm"
                       : "text-slate-600 hover:text-slate-950 hover:bg-slate-200"
                   }`}
                 >
@@ -298,7 +298,7 @@ export function CompoundingCalculator() {
                   href={brand.whatsapp}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn-primary text-xs w-full text-center py-3 px-4 font-bold flex items-center justify-center gap-2 group shadow-md shadow-indigo-500/10 cursor-pointer"
+                  className="btn-primary text-xs w-full text-center py-3 px-4 font-bold flex items-center justify-center gap-2 group shadow-md shadow-orange-500/10 cursor-pointer"
                 >
                   <span>Start Now & Avoid this Loss</span>
                   <span className="group-hover:translate-x-1 transition-transform">&rarr;</span>

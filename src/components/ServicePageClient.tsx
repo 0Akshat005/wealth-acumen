@@ -80,8 +80,8 @@ function ServiceNav({ currentSlug }: { currentSlug: string }) {
               href={`/services/${s.slug}`}
               className={`flex items-center gap-3 px-4 py-2.5 rounded-xl text-sm transition-all duration-200 ${
                 s.slug === currentSlug
-                  ? "bg-indigo-50 text-indigo-600 border border-indigo-200"
-                  : "text-slate-600 hover:text-indigo-600 hover:bg-slate-50"
+                  ? "bg-orange-50 text-[#D9791A] border border-orange-100"
+                  : "text-slate-600 hover:text-[#D9791A] hover:bg-slate-50"
               }`}
             >
               {s.title}
@@ -108,8 +108,8 @@ export default function ServicePageClient({ slug }: { slug: string }) {
       {/* ═══ HERO ═══ */}
       <section className="relative overflow-hidden pt-32 pb-20 sm:pt-40 sm:pb-28">
         <div className="absolute inset-0">
-          <div className="absolute top-1/4 left-1/3 w-96 h-96 bg-indigo-500/10 rounded-full blur-[128px] animate-pulse-glow" />
-          <div className="absolute bottom-1/4 right-1/4 w-72 h-72 bg-cyan-500/8 rounded-full blur-[128px] animate-pulse-glow" style={{ animationDelay: "2s" }} />
+          <div className="absolute top-1/4 left-1/3 w-96 h-96 bg-orange-500/10 rounded-full blur-[128px] animate-pulse-glow" />
+          <div className="absolute bottom-1/4 right-1/4 w-72 h-72 bg-amber-500/8 rounded-full blur-[128px] animate-pulse-glow" style={{ animationDelay: "2s" }} />
         </div>
         <div
           className="absolute inset-0 opacity-[0.03]"
@@ -158,7 +158,7 @@ export default function ServicePageClient({ slug }: { slug: string }) {
               <FadeInSection>
                 <div className="glass rounded-2xl p-8 md:p-10">
                   <div className="flex items-center gap-3 mb-6">
-                    <div className="w-1 h-8 rounded-full bg-gradient-to-b from-indigo-500 to-cyan-500" />
+                    <div className="w-1 h-8 rounded-full bg-gradient-to-b from-[#E8A33D] to-[#C9670A]" />
                     <h2 className="font-[family-name:var(--font-outfit)] text-2xl sm:text-3xl font-bold text-slate-900">
                       About {service.title}
                     </h2>
@@ -170,7 +170,7 @@ export default function ServicePageClient({ slug }: { slug: string }) {
               <FadeInSection delay={0.1}>
                 <div className="glass rounded-2xl p-8 md:p-10">
                   <div className="flex items-center gap-3 mb-8">
-                    <div className="w-1 h-8 rounded-full bg-gradient-to-b from-cyan-500 to-indigo-500" />
+                    <div className="w-1 h-8 rounded-full bg-gradient-to-b from-[#C9670A] to-[#E8A33D]" />
                     <h2 className="font-[family-name:var(--font-outfit)] text-2xl sm:text-3xl font-bold text-slate-900">Key Features</h2>
                   </div>
                   <ul className="space-y-4">
@@ -183,8 +183,8 @@ export default function ServicePageClient({ slug }: { slug: string }) {
                         transition={{ duration: 0.5, delay: i * 0.06 }}
                         className="flex items-start gap-4 group"
                       >
-                        <span className="shrink-0 w-7 h-7 rounded-lg bg-indigo-50 border border-indigo-100 flex items-center justify-center mt-0.5 shadow-sm">
-                          <svg className="w-4 h-4 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                        <span className="shrink-0 w-7 h-7 rounded-lg bg-orange-50 border border-orange-100 flex items-center justify-center mt-0.5 shadow-sm">
+                          <svg className="w-4 h-4 text-[#D9791A]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                             <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" />
                           </svg>
                         </span>
@@ -230,8 +230,8 @@ export default function ServicePageClient({ slug }: { slug: string }) {
         <div className="max-w-4xl mx-auto">
           <FadeInSection>
             <div className="relative glass rounded-3xl p-10 md:p-16 text-center overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/10 via-transparent to-cyan-500/10" />
-              <div className="absolute top-0 left-1/2 -translate-x-1/2 w-2/3 h-px bg-gradient-to-r from-transparent via-indigo-500/50 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-br from-orange-500/10 via-transparent to-amber-500/10" />
+              <div className="absolute top-0 left-1/2 -translate-x-1/2 w-2/3 h-px bg-gradient-to-r from-transparent via-[#D9791A]/50 to-transparent" />
               <div className="relative z-10">
                 <h2 className="font-[family-name:var(--font-outfit)] text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
                   Interested in {service.title}?

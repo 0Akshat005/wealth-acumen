@@ -36,7 +36,7 @@ export default function DisclaimerPage() {
       {/* ═══ HERO ═══ */}
       <section className="relative overflow-hidden pt-32 pb-20">
         <div className="absolute inset-0">
-          <div className="absolute top-1/4 left-1/3 w-96 h-96 bg-indigo-500/8 rounded-full blur-[128px] animate-pulse-glow" />
+          <div className="absolute top-1/4 left-1/3 w-96 h-96 bg-orange-500/8 rounded-full blur-[128px] animate-pulse-glow" />
         </div>
 
         <div
@@ -93,7 +93,7 @@ export default function DisclaimerPage() {
                 <ul className="space-y-4">
                   {disclaimerContent.acknowledgements.map((item, i) => (
                     <li key={i} className="flex items-start gap-3">
-                      <span className="mt-1.5 w-2 h-2 rounded-full bg-gradient-to-r from-indigo-500 to-cyan-500 flex-shrink-0" />
+                      <span className="mt-1.5 w-2 h-2 rounded-full bg-gradient-to-r from-[#E8A33D] to-[#C9670A] flex-shrink-0" />
                       <span className="text-slate-600 leading-relaxed">
                         {item}
                       </span>

@@ -35,8 +35,8 @@ export default function DownloadsPage() {
       {/* ═══ HERO ═══ */}
       <section className="relative pt-32 pb-16 overflow-hidden">
         <div className="absolute inset-0">
-          <div className="absolute top-1/3 left-1/4 w-96 h-96 bg-indigo-500/10 rounded-full blur-[128px] animate-pulse-glow" />
-          <div className="absolute bottom-1/4 right-1/4 w-72 h-72 bg-cyan-500/8 rounded-full blur-[100px] animate-pulse-glow" style={{ animationDelay: "2s" }} />
+          <div className="absolute top-1/3 left-1/4 w-96 h-96 bg-orange-500/10 rounded-full blur-[128px] animate-pulse-glow" />
+          <div className="absolute bottom-1/4 right-1/4 w-72 h-72 bg-amber-500/8 rounded-full blur-[100px] animate-pulse-glow" style={{ animationDelay: "2s" }} />
         </div>
 
         <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 text-center">
@@ -44,7 +44,7 @@ export default function DownloadsPage() {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-            className="text-sm font-medium text-indigo-600 tracking-wider uppercase mb-3"
+            className="text-sm font-medium text-[#D9791A] tracking-wider uppercase mb-3"
           >
             Resources
           </motion.p>
@@ -73,8 +73,8 @@ export default function DownloadsPage() {
           <FadeInSection>
             <div className="mb-10">
               <div className="flex items-center gap-3 mb-2">
-                <div className="w-10 h-10 rounded-xl bg-indigo-500/10 flex items-center justify-center">
-                  <svg className="w-5 h-5 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                <div className="w-10 h-10 rounded-xl bg-[#D9791A]/10 flex items-center justify-center">
+                  <svg className="w-5 h-5 text-[#D9791A]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
                   </svg>
                 </div>
@@ -99,19 +99,19 @@ export default function DownloadsPage() {
                 >
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 rounded-lg bg-indigo-500/10 flex items-center justify-center">
-                        <svg className="w-5 h-5 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                      <div className="w-10 h-10 rounded-lg bg-[#D9791A]/10 flex items-center justify-center">
+                        <svg className="w-5 h-5 text-[#D9791A]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                           <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
                         </svg>
                       </div>
                       <div>
-                        <p className="font-medium text-slate-800 group-hover:text-indigo-600 transition-colors">
+                        <p className="font-medium text-slate-800 group-hover:text-[#D9791A] transition-colors">
                           {portal.name}
                         </p>
                         <p className="text-xs text-slate-500">Check status</p>
                       </div>
                     </div>
-                    <svg className="w-4 h-4 text-slate-600 group-hover:text-indigo-600 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <svg className="w-4 h-4 text-slate-600 group-hover:text-[#D9791A] transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
                     </svg>
                   </div>
@@ -123,7 +123,7 @@ export default function DownloadsPage() {
       </section>
 
       {/* ═══ VALIDATE KYC ═══ */}
-      <section className="section-padding py-12 bg-gradient-to-b from-transparent via-indigo-500/[0.02] to-transparent">
+      <section className="section-padding py-12 bg-gradient-to-b from-transparent via-[#D9791A]/[0.015] to-transparent">
         <div className="max-w-6xl mx-auto">
           <FadeInSection>
             <div className="mb-10">

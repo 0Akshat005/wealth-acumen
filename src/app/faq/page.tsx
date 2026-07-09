@@ -45,7 +45,7 @@ function AccordionItem({
     <div
       className={`glass rounded-2xl overflow-hidden transition-all duration-350 ${
         isOpen
-          ? "border-indigo-500/30 shadow-[0_0_24px_-8px_rgba(99,102,241,0.15)]"
+          ? "border-orange-500/30 shadow-[0_0_24px_-8px_rgba(217,121,26,0.15)]"
           : ""
       }`}
     >
@@ -54,16 +54,16 @@ function AccordionItem({
         className="w-full flex items-center justify-between gap-4 p-6 sm:p-7 text-left group cursor-pointer"
         aria-expanded={isOpen}
       >
-        <span className="font-[family-name:var(--font-outfit)] text-base sm:text-lg font-semibold text-slate-800 group-hover:text-indigo-600 transition-colors">
+        <span className="font-[family-name:var(--font-outfit)] text-base sm:text-lg font-semibold text-slate-800 group-hover:text-[#D9791A] transition-colors">
           {question}
         </span>
         <span
-          className={`w-8 h-8 rounded-lg bg-indigo-500/10 flex items-center justify-center flex-shrink-0 transition-all duration-300 ${
-            isOpen ? "rotate-45 bg-indigo-500/20" : ""
+          className={`w-8 h-8 rounded-lg bg-[#D9791A]/10 flex items-center justify-center flex-shrink-0 transition-all duration-300 ${
+            isOpen ? "rotate-45 bg-[#D9791A]/20" : ""
           }`}
         >
           <svg
-            className="w-4 h-4 text-indigo-600"
+            className="w-4 h-4 text-[#D9791A]"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -108,8 +108,8 @@ export default function FAQPage() {
       <section className="relative overflow-hidden pt-32 pb-20">
         {/* Background effects */}
         <div className="absolute inset-0">
-          <div className="absolute top-1/4 left-1/3 w-96 h-96 bg-indigo-500/10 rounded-full blur-[128px] animate-pulse-glow" />
-          <div className="absolute bottom-1/3 right-1/4 w-80 h-80 bg-cyan-500/8 rounded-full blur-[128px] animate-pulse-glow" style={{ animationDelay: "2s" }} />
+          <div className="absolute top-1/4 left-1/3 w-96 h-96 bg-orange-500/8 rounded-full blur-[128px] animate-pulse-glow" />
+          <div className="absolute bottom-1/3 right-1/4 w-80 h-80 bg-amber-500/8 rounded-full blur-[128px] animate-pulse-glow" style={{ animationDelay: "2s" }} />
         </div>
 
         <div

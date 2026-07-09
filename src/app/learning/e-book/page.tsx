@@ -34,8 +34,8 @@ export default function EBookPage() {
       {/* ═══ HERO ═══ */}
       <section className="relative pt-32 pb-16 overflow-hidden">
         <div className="absolute inset-0">
-          <div className="absolute top-1/3 left-1/4 w-96 h-96 bg-indigo-500/10 rounded-full blur-[128px] animate-pulse-glow" />
-          <div className="absolute bottom-1/4 right-1/4 w-72 h-72 bg-cyan-500/8 rounded-full blur-[100px] animate-pulse-glow" style={{ animationDelay: "2s" }} />
+          <div className="absolute top-1/3 left-1/4 w-96 h-96 bg-orange-500/10 rounded-full blur-[128px] animate-pulse-glow" />
+          <div className="absolute bottom-1/4 right-1/4 w-72 h-72 bg-amber-500/8 rounded-full blur-[100px] animate-pulse-glow" style={{ animationDelay: "2s" }} />
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-amber-500/5 rounded-full blur-[160px]" />
         </div>
 
@@ -44,7 +44,7 @@ export default function EBookPage() {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-            className="text-sm font-medium text-indigo-600 tracking-wider uppercase mb-3"
+            className="text-sm font-medium text-[#D9791A] tracking-wider uppercase mb-3"
           >
             Learning Resources
           </motion.p>
@@ -73,13 +73,13 @@ export default function EBookPage() {
           <FadeInSection>
             <div className="glass rounded-2xl p-8 md:p-10 relative overflow-hidden">
               {/* Decorative top border */}
-              <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-indigo-500/50 to-transparent" />
-              <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/5 via-transparent to-cyan-500/5" />
+              <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#D9791A]/50 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-br from-orange-500/5 via-transparent to-amber-500/5" />
 
               <div className="relative z-10">
                 {/* Icon */}
-                <div className="w-14 h-14 rounded-2xl bg-indigo-500/10 flex items-center justify-center mx-auto mb-6">
-                  <svg className="w-7 h-7 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                <div className="w-14 h-14 rounded-2xl bg-[#D9791A]/10 flex items-center justify-center mx-auto mb-6">
+                  <svg className="w-7 h-7 text-[#D9791A]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" />
                   </svg>
                 </div>
@@ -103,7 +103,7 @@ export default function EBookPage() {
                     <input
                       type="text"
                       placeholder="Enter your full name"
-                      className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 placeholder:text-slate-400 text-sm focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all"
+                      className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 placeholder:text-slate-400 text-sm focus:outline-none focus:border-[#D9791A] focus:ring-1 focus:ring-[#D9791A] transition-all"
                     />
                   </div>
 
@@ -115,7 +115,7 @@ export default function EBookPage() {
                     <input
                       type="email"
                       placeholder="Enter your email address"
-                      className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 placeholder:text-slate-400 text-sm focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all"
+                      className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 placeholder:text-slate-400 text-sm focus:outline-none focus:border-[#D9791A] focus:ring-1 focus:ring-[#D9791A] transition-all"
                     />
                   </div>
 
@@ -127,7 +127,7 @@ export default function EBookPage() {
                     <input
                       type="tel"
                       placeholder="Enter your mobile number"
-                      className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 placeholder:text-slate-400 text-sm focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all"
+                      className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 placeholder:text-slate-400 text-sm focus:outline-none focus:border-[#D9791A] focus:ring-1 focus:ring-[#D9791A] transition-all"
                     />
                   </div>
 

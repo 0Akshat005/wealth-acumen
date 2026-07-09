@@ -79,8 +79,8 @@ export default function DisclosurePage() {
               <ol className="space-y-6">
                 {disclosureContent.points.map((point, i) => (
                   <li key={i} className="flex items-start gap-4">
-                    <span className="w-8 h-8 rounded-lg bg-indigo-500/10 flex items-center justify-center flex-shrink-0 mt-0.5">
-                      <span className="text-sm font-semibold text-indigo-600">
+                    <span className="w-8 h-8 rounded-lg bg-[#D9791A]/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <span className="text-sm font-semibold text-[#D9791A]">
                         {i + 1}
                       </span>
                     </span>

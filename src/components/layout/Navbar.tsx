@@ -356,7 +356,7 @@ export function Navbar() {
                   <div key={link.label}>
                     <Link
                       href={link.href}
-                      className="block px-4 py-3 text-base font-medium text-slate-700 hover:text-indigo-600 hover:bg-slate-50 rounded-lg transition-colors"
+                      className="block px-4 py-3 text-base font-medium text-slate-700 hover:text-[#D9791A] hover:bg-slate-50 rounded-lg transition-colors"
                       onClick={() => !link.children && setMobileOpen(false)}
                     >
                       {link.label}
@@ -376,7 +376,7 @@ export function Navbar() {
                                     rel: "noopener noreferrer",
                                   }
                                 : {})}
-                              className="block px-3 py-2 text-sm text-slate-500 hover:text-indigo-600 hover:bg-slate-50 rounded-lg transition-colors"
+                              className="block px-3 py-2 text-sm text-slate-500 hover:text-[#D9791A] hover:bg-slate-50 rounded-lg transition-colors"
                               onClick={() => setMobileOpen(false)}
                             >
                               {child.label}
@@ -398,7 +398,7 @@ export function Navbar() {
                       href={item.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="block px-4 py-2.5 text-sm text-slate-600 hover:text-indigo-600 hover:bg-slate-50 rounded-lg transition-colors"
+                      className="block px-4 py-2.5 text-sm text-slate-600 hover:text-[#D9791A] hover:bg-slate-50 rounded-lg transition-colors"
                       onClick={() => setMobileOpen(false)}
                     >
                       {item.label}

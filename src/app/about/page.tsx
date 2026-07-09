@@ -212,11 +212,11 @@ export default function AboutPage() {
       </section>
 
       {/* ═══ OUR MISSION ═══ */}
-      <section className="section-padding bg-gradient-to-b from-transparent via-indigo-500/[0.02] to-transparent">
+      <section className="section-padding bg-gradient-to-b from-transparent via-[#D9791A]/[0.015] to-transparent">
         <div className="max-w-4xl mx-auto">
           <FadeInSection>
             <div className="text-center mb-10">
-              <p className="text-sm font-medium text-indigo-600 tracking-wider uppercase mb-3">
+              <p className="text-sm font-medium text-[#D9791A] tracking-wider uppercase mb-3">
                 Our Purpose
               </p>
               <h2 className="font-[family-name:var(--font-serif)] text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900">
@@ -228,8 +228,8 @@ export default function AboutPage() {
           <FadeInSection delay={0.15}>
             <div className="glass rounded-2xl p-8 md:p-12">
               <div className="flex items-start gap-5">
-                <div className="hidden sm:flex w-14 h-14 rounded-xl bg-indigo-500/10 items-center justify-center flex-shrink-0 mt-1">
-                  <svg className="w-7 h-7 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                <div className="hidden sm:flex w-14 h-14 rounded-xl bg-[#D9791A]/10 items-center justify-center flex-shrink-0 mt-1">
+                  <svg className="w-7 h-7 text-[#D9791A]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
                   </svg>
                 </div>
@@ -269,7 +269,7 @@ export default function AboutPage() {
               <ul className="space-y-4">
                 {aboutContent.angelOneBenefits.map((benefit, i) => (
                   <li key={i} className="flex items-start gap-3">
-                    <span className="mt-1.5 w-2 h-2 rounded-full bg-gradient-to-r from-indigo-500 to-cyan-500 flex-shrink-0" />
+                    <span className="mt-1.5 w-2 h-2 rounded-full bg-gradient-to-r from-[#E8A33D] to-[#C9670A] flex-shrink-0" />
                     <span className="text-slate-600 leading-relaxed">
                       {benefit}
                     </span>
@@ -301,7 +301,7 @@ export default function AboutPage() {
           <FadeInSection delay={0.15}>
             <div className="glass glass-hover rounded-2xl p-8 md:p-12 text-center">
               {/* Avatar */}
-              <div className="w-24 h-24 rounded-full bg-gradient-to-br from-indigo-500 to-cyan-500 flex items-center justify-center text-white text-3xl font-bold mx-auto mb-6">
+              <div className="w-24 h-24 rounded-full bg-gradient-to-br from-[#E8A33D] to-[#C9670A] flex items-center justify-center text-white text-3xl font-bold mx-auto mb-6">
                 {proprietor.name
                   .split(" ")
                   .map((n) => n.charAt(0))
@@ -312,7 +312,7 @@ export default function AboutPage() {
                 {proprietor.name}
               </h3>
  
-              <p className="text-sm text-indigo-600 font-medium mb-6">
+              <p className="text-sm text-[#D9791A] font-medium mb-6">
                 Proprietor, {brand.name}
               </p>
  

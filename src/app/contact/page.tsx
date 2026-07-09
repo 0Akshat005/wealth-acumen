@@ -35,8 +35,8 @@ export default function ContactPage() {
       {/* ═══ HERO ═══ */}
       <section className="relative pt-32 pb-16 overflow-hidden">
         <div className="absolute inset-0">
-          <div className="absolute top-1/3 left-1/4 w-96 h-96 bg-indigo-500/10 rounded-full blur-[128px] animate-pulse-glow" />
-          <div className="absolute bottom-1/4 right-1/4 w-72 h-72 bg-cyan-500/8 rounded-full blur-[100px] animate-pulse-glow" style={{ animationDelay: "2s" }} />
+          <div className="absolute top-1/3 left-1/4 w-96 h-96 bg-orange-500/10 rounded-full blur-[128px] animate-pulse-glow" />
+          <div className="absolute bottom-1/4 right-1/4 w-72 h-72 bg-amber-500/8 rounded-full blur-[100px] animate-pulse-glow" style={{ animationDelay: "2s" }} />
         </div>
 
         <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 text-center">
@@ -44,7 +44,7 @@ export default function ContactPage() {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-            className="text-sm font-medium text-indigo-600 tracking-wider uppercase mb-3"
+            className="text-sm font-medium text-[#D9791A] tracking-wider uppercase mb-3"
           >
             Get in Touch
           </motion.p>
@@ -86,14 +86,14 @@ export default function ContactPage() {
                       href={`mailto:${brand.email}`}
                       className="flex items-start gap-4 group"
                     >
-                      <div className="w-10 h-10 rounded-xl bg-indigo-500/10 flex items-center justify-center shrink-0">
-                        <svg className="w-5 h-5 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                      <div className="w-10 h-10 rounded-xl bg-[#D9791A]/10 flex items-center justify-center shrink-0">
+                        <svg className="w-5 h-5 text-[#D9791A]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                           <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
                         </svg>
                       </div>
                       <div>
                         <p className="text-xs text-slate-500 mb-0.5">Email</p>
-                        <p className="text-slate-600 group-hover:text-indigo-600 transition-colors">
+                        <p className="text-slate-600 group-hover:text-[#D9791A] transition-colors">
                           {brand.email}
                         </p>
                       </div>
@@ -184,8 +184,8 @@ export default function ContactPage() {
               {/* Angel One Account Opening */}
               <FadeInSection delay={0.3}>
                 <div className="glass rounded-2xl p-8 relative overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/10 via-transparent to-cyan-500/10" />
-                  <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-indigo-500/50 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-br from-orange-500/10 via-transparent to-amber-500/10" />
+                  <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#D9791A]/50 to-transparent" />
                   <div className="relative z-10">
                     <h2 className="font-[family-name:var(--font-outfit)] text-xl font-semibold text-slate-900 mb-3">
                       Open a Demat Account
@@ -231,7 +231,7 @@ export default function ContactPage() {
                     <input
                       type="text"
                       placeholder="Enter your name"
-                      className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 placeholder:text-slate-400 text-sm focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all"
+                      className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 placeholder:text-slate-400 text-sm focus:outline-none focus:border-[#D9791A] focus:ring-1 focus:ring-[#D9791A] transition-all"
                     />
                   </div>
 
@@ -243,7 +243,7 @@ export default function ContactPage() {
                     <input
                       type="email"
                       placeholder="Enter your email"
-                      className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 placeholder:text-slate-400 text-sm focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all"
+                      className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 placeholder:text-slate-400 text-sm focus:outline-none focus:border-[#D9791A] focus:ring-1 focus:ring-[#D9791A] transition-all"
                     />
                   </div>
 
@@ -255,7 +255,7 @@ export default function ContactPage() {
                     <input
                       type="tel"
                       placeholder="Enter your phone number"
-                      className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 placeholder:text-slate-400 text-sm focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all"
+                      className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 placeholder:text-slate-400 text-sm focus:outline-none focus:border-[#D9791A] focus:ring-1 focus:ring-[#D9791A] transition-all"
                     />
                   </div>
 
@@ -267,7 +267,7 @@ export default function ContactPage() {
                     <textarea
                       rows={4}
                       placeholder="How can we help you?"
-                      className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 placeholder:text-slate-400 text-sm focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all resize-none"
+                      className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 placeholder:text-slate-400 text-sm focus:outline-none focus:border-[#D9791A] focus:ring-1 focus:ring-[#D9791A] transition-all resize-none"
                     />
                   </div>
 
