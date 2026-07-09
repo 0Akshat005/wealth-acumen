@@ -168,7 +168,7 @@ export default function AboutPage() {
               {/* Main Visual Image */}
               <div className="relative w-full aspect-[4/3] rounded-[24px] overflow-hidden border border-[#E7E1D8] shadow-lg bg-white">
                 <Image
-                  src="/assets/images/about-hero-visual.jpg"
+                  src="/assets/images/about-hero-visual-v2.png"
                   alt="Financial Growth Compass"
                   fill
                   className="object-cover"
