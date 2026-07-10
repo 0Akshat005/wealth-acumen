@@ -67,16 +67,16 @@ export default function AboutPage() {
         </div>
 
         {/* Desktop-only: Immersive Independent Visual Background - fades and overlaps behind grid */}
-        <div className="hidden lg:block absolute inset-y-0 right-0 w-[50%] z-0 pointer-events-none select-none overflow-hidden opacity-90">
+        <div className="hidden lg:block absolute inset-y-0 right-0 w-[55%] z-0 pointer-events-none select-none overflow-hidden opacity-90">
           <Image
             src="/assets/images/about-hero-visual.jpg"
             alt=""
             fill
-            className="object-cover object-[25%_center]"
+            className="object-cover object-right"
             priority
           />
           {/* 360-degree soft gradient disappearing masks to blend visual perfectly into #FFFDF9 */}
-          <div className="absolute inset-y-0 left-0 w-16 sm:w-32 bg-gradient-to-r from-[#FFFDF9] via-[#FFFDF9]/90 to-transparent" />
+          <div className="absolute inset-y-0 left-0 w-[1%] bg-gradient-to-r from-[#FFFDF9] via-[#FFFDF9]/95 via-[#FFFDF9]/40 to-transparent" />
           <div className="absolute inset-y-0 right-0 w-12 sm:w-20 bg-gradient-to-l from-[#FFFDF9] to-transparent" />
           <div className="absolute inset-x-0 top-0 h-16 sm:h-24 bg-gradient-to-b from-[#FFFDF9] via-[#FFFDF9]/40 to-transparent" />
           <div className="absolute inset-x-0 bottom-0 h-16 sm:h-24 bg-gradient-to-t from-[#FFFDF9] via-[#FFFDF9]/40 to-transparent" />
@@ -99,7 +99,7 @@ export default function AboutPage() {
               <span className="text-xs font-bold text-[#D9791A] tracking-[0.2em] uppercase leading-none">
                 Who We Are
               </span>
-              
+
               <h1 className="font-[family-name:var(--font-serif)] text-4xl sm:text-5xl lg:text-[3.25rem] font-bold text-[#10141F] leading-[1.1] tracking-tight">
                 About <span className="text-[#D9791A]">Wealth Acumen</span>
               </h1>
@@ -125,7 +125,7 @@ export default function AboutPage() {
                     Your goals are our priority. We put your interests first.
                   </p>
                 </div>
-                
+
                 {/* Pillar 2 */}
                 <div className="flex flex-col space-y-2">
                   <span className="font-[family-name:var(--font-serif)] text-3xl sm:text-4xl font-extrabold text-[#D9791A] leading-none mb-1">02</span>
@@ -136,7 +136,7 @@ export default function AboutPage() {
                     Honest, unbiased and clear guidance you can always rely on.
                   </p>
                 </div>
-                
+
                 {/* Pillar 3 */}
                 <div className="flex flex-col space-y-2">
                   <span className="font-[family-name:var(--font-serif)] text-3xl sm:text-4xl font-extrabold text-[#D9791A] leading-none mb-1">03</span>
@@ -147,7 +147,7 @@ export default function AboutPage() {
                     Personalized strategies designed around your dreams and needs.
                   </p>
                 </div>
-                
+
                 {/* Pillar 4 */}
                 <div className="flex flex-col space-y-2">
                   <span className="font-[family-name:var(--font-serif)] text-3xl sm:text-4xl font-extrabold text-[#D9791A] leading-none mb-1">04</span>
@@ -191,7 +191,7 @@ export default function AboutPage() {
               </h2>
             </div>
           </FadeInSection>
- 
+
           <FadeInSection delay={0.15}>
             <div className="glass rounded-2xl p-8 md:p-12">
               <div className="flex items-start gap-5">
@@ -208,7 +208,7 @@ export default function AboutPage() {
           </FadeInSection>
         </div>
       </section>
- 
+
       {/* ═══ ANGEL ONE CHANNEL PARTNER ═══ */}
       <section className="section-padding">
         <div className="max-w-5xl mx-auto">
@@ -222,17 +222,17 @@ export default function AboutPage() {
               </h2>
             </div>
           </FadeInSection>
- 
+
           <FadeInSection delay={0.1}>
             <div className="glass rounded-2xl p-8 md:p-12">
               <p className="text-slate-700 leading-relaxed text-base sm:text-lg mb-8 text-justify">
                 {aboutContent.angelOnePartnership}
               </p>
- 
+
               <h3 className="font-[family-name:var(--font-outfit)] text-lg font-semibold text-slate-900 mb-5">
                 Through this partnership, I aim to provide my clients with:
               </h3>
- 
+
               <ul className="space-y-4">
                 {aboutContent.angelOneBenefits.map((benefit, i) => (
                   <li key={i} className="flex items-start gap-3">
@@ -247,7 +247,7 @@ export default function AboutPage() {
           </FadeInSection>
         </div>
       </section>
- 
+
       {/* ═══ PROPRIETOR ═══ */}
       <section
         id="proprietor"
@@ -264,7 +264,7 @@ export default function AboutPage() {
               </h2>
             </div>
           </FadeInSection>
- 
+
           <FadeInSection delay={0.15}>
             <div className="glass glass-hover rounded-2xl p-8 md:p-12 text-center">
               {/* Avatar */}
@@ -274,15 +274,15 @@ export default function AboutPage() {
                   .map((n) => n.charAt(0))
                   .join("")}
               </div>
- 
+
               <h3 className="font-[family-name:var(--font-outfit)] text-2xl sm:text-3xl font-bold text-slate-900 mb-2">
                 {proprietor.name}
               </h3>
- 
+
               <p className="text-sm text-[#D9791A] font-medium mb-6">
                 Proprietor, {brand.name}
               </p>
- 
+
               <p className="text-slate-700 leading-relaxed text-base sm:text-lg max-w-2xl mx-auto">
                 {proprietor.bio}
               </p>
@@ -290,7 +290,7 @@ export default function AboutPage() {
           </FadeInSection>
         </div>
       </section>
- 
+
 
     </>
   );
