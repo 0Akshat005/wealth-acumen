@@ -67,19 +67,19 @@ export default function AboutPage() {
         </div>
 
         {/* Desktop-only: Immersive Independent Visual Background - fades and overlaps behind grid */}
-        <div className="hidden lg:block absolute inset-y-0 right-0 w-[48%] z-0 pointer-events-none select-none overflow-hidden opacity-90">
+        <div className="hidden lg:block absolute inset-y-0 right-0 w-[50%] z-0 pointer-events-none select-none overflow-hidden opacity-90">
           <Image
             src="/assets/images/about-hero-visual.jpg"
             alt=""
             fill
-            className="object-cover object-center"
+            className="object-cover object-[25%_center]"
             priority
           />
           {/* 360-degree soft gradient disappearing masks to blend visual perfectly into #FFFDF9 */}
-          <div className="absolute inset-y-0 left-0 w-24 sm:w-48 bg-gradient-to-r from-[#FFFDF9] via-[#FFFDF9]/85 sm:via-[#FFFDF9]/60 to-transparent" />
-          <div className="absolute inset-y-0 right-0 w-16 sm:w-24 bg-gradient-to-l from-[#FFFDF9] to-transparent" />
-          <div className="absolute inset-x-0 top-0 h-24 sm:h-32 bg-gradient-to-b from-[#FFFDF9] via-[#FFFDF9]/40 to-transparent" />
-          <div className="absolute inset-x-0 bottom-0 h-24 sm:h-32 bg-gradient-to-t from-[#FFFDF9] via-[#FFFDF9]/40 to-transparent" />
+          <div className="absolute inset-y-0 left-0 w-16 sm:w-32 bg-gradient-to-r from-[#FFFDF9] via-[#FFFDF9]/90 to-transparent" />
+          <div className="absolute inset-y-0 right-0 w-12 sm:w-20 bg-gradient-to-l from-[#FFFDF9] to-transparent" />
+          <div className="absolute inset-x-0 top-0 h-16 sm:h-24 bg-gradient-to-b from-[#FFFDF9] via-[#FFFDF9]/40 to-transparent" />
+          <div className="absolute inset-x-0 bottom-0 h-16 sm:h-24 bg-gradient-to-t from-[#FFFDF9] via-[#FFFDF9]/40 to-transparent" />
         </div>
 
         {/* Grid pattern */}
