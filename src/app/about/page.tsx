@@ -104,8 +104,8 @@ export default function AboutPage() {
                 About <span className="text-[#D9791A]">Wealth Acumen</span>
               </h1>
 
-              <div className="space-y-4 text-base text-[#5B5955] leading-relaxed font-normal text-justify">
-                <p className="text-lg font-semibold text-slate-800 leading-snug">
+              <div className="space-y-5 text-base sm:text-lg text-[#5B5955] leading-relaxed font-normal text-justify">
+                <p className="text-xl sm:text-2xl font-semibold text-slate-800 leading-snug">
                   Guiding your financial journey with trust, clarity and purpose.
                 </p>
                 <p>
@@ -114,47 +114,47 @@ export default function AboutPage() {
               </div>
 
               {/* Trust Pillars - Minimal & Luxurious Typographic Layout */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 w-full pt-8 border-t border-slate-200/60 mt-8">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 w-full pt-8 border-t border-slate-200/60 mt-8">
                 {/* Pillar 1 */}
                 <div className="flex flex-col space-y-2">
-                  <span className="font-[family-name:var(--font-serif)] text-2xl font-light text-[#D9791A] leading-none">01</span>
-                  <h3 className="font-[family-name:var(--font-outfit)] text-sm font-bold text-slate-900">
+                  <span className="font-[family-name:var(--font-serif)] text-3xl sm:text-4xl font-extrabold text-[#D9791A] leading-none mb-1">01</span>
+                  <h3 className="font-[family-name:var(--font-outfit)] text-base sm:text-lg font-extrabold text-slate-900">
                     Client First
                   </h3>
-                  <p className="text-xs text-[#5B5955] leading-relaxed">
+                  <p className="text-sm sm:text-base text-[#5B5955] leading-relaxed text-justify">
                     Your goals are our priority. We put your interests first.
                   </p>
                 </div>
                 
                 {/* Pillar 2 */}
                 <div className="flex flex-col space-y-2">
-                  <span className="font-[family-name:var(--font-serif)] text-2xl font-light text-[#D9791A] leading-none">02</span>
-                  <h3 className="font-[family-name:var(--font-outfit)] text-sm font-bold text-slate-900">
+                  <span className="font-[family-name:var(--font-serif)] text-3xl sm:text-4xl font-extrabold text-[#D9791A] leading-none mb-1">02</span>
+                  <h3 className="font-[family-name:var(--font-outfit)] text-base sm:text-lg font-extrabold text-slate-900">
                     Transparent Advice
                   </h3>
-                  <p className="text-xs text-[#5B5955] leading-relaxed">
+                  <p className="text-sm sm:text-base text-[#5B5955] leading-relaxed text-justify">
                     Honest, unbiased and clear guidance you can always rely on.
                   </p>
                 </div>
                 
                 {/* Pillar 3 */}
                 <div className="flex flex-col space-y-2">
-                  <span className="font-[family-name:var(--font-serif)] text-2xl font-light text-[#D9791A] leading-none">03</span>
-                  <h3 className="font-[family-name:var(--font-outfit)] text-sm font-bold text-slate-900">
+                  <span className="font-[family-name:var(--font-serif)] text-3xl sm:text-4xl font-extrabold text-[#D9791A] leading-none mb-1">03</span>
+                  <h3 className="font-[family-name:var(--font-outfit)] text-base sm:text-lg font-extrabold text-slate-900">
                     Goal Based Approach
                   </h3>
-                  <p className="text-xs text-[#5B5955] leading-relaxed">
+                  <p className="text-sm sm:text-base text-[#5B5955] leading-relaxed text-justify">
                     Personalized strategies designed around your dreams and needs.
                   </p>
                 </div>
                 
                 {/* Pillar 4 */}
                 <div className="flex flex-col space-y-2">
-                  <span className="font-[family-name:var(--font-serif)] text-2xl font-light text-[#D9791A] leading-none">04</span>
-                  <h3 className="font-[family-name:var(--font-outfit)] text-sm font-bold text-slate-900">
+                  <span className="font-[family-name:var(--font-serif)] text-3xl sm:text-4xl font-extrabold text-[#D9791A] leading-none mb-1">04</span>
+                  <h3 className="font-[family-name:var(--font-outfit)] text-base sm:text-lg font-extrabold text-slate-900">
                     Long Term Growth
                   </h3>
-                  <p className="text-xs text-[#5B5955] leading-relaxed">
+                  <p className="text-sm sm:text-base text-[#5B5955] leading-relaxed text-justify">
                     Focused on creating sustainable wealth and financial independence.
                   </p>
                 </div>
@@ -236,8 +236,8 @@ export default function AboutPage() {
               <ul className="space-y-4">
                 {aboutContent.angelOneBenefits.map((benefit, i) => (
                   <li key={i} className="flex items-start gap-3">
-                    <span className="mt-1.5 w-2 h-2 rounded-full bg-gradient-to-r from-[#E8A33D] to-[#C9670A] flex-shrink-0" />
-                    <span className="text-slate-600 leading-relaxed">
+                    <span className="mt-2 w-2 h-2 rounded-full bg-gradient-to-r from-[#E8A33D] to-[#C9670A] flex-shrink-0" />
+                    <span className="text-base text-slate-700 leading-relaxed">
                       {benefit}
                     </span>
                   </li>
@@ -283,7 +283,7 @@ export default function AboutPage() {
                 Proprietor, {brand.name}
               </p>
  
-              <p className="text-slate-600 leading-relaxed max-w-2xl mx-auto">
+              <p className="text-slate-700 leading-relaxed text-base sm:text-lg max-w-2xl mx-auto">
                 {proprietor.bio}
               </p>
             </div>
