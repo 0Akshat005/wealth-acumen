@@ -340,7 +340,7 @@ export function Navbar() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-40 lg:hidden"
+            className="fixed inset-0 z-[100] lg:hidden"
           >
             <div
               className="absolute inset-0 bg-black/60 backdrop-blur-sm"
@@ -351,9 +351,43 @@ export function Navbar() {
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
               transition={{ type: "spring", damping: 30, stiffness: 300 }}
-              className="absolute right-0 top-0 bottom-0 w-80 max-w-[85vw] bg-white border-l border-slate-200 overflow-y-auto"
+              className="absolute right-0 top-0 bottom-0 w-80 max-w-[85vw] bg-white border-l border-slate-200 overflow-y-auto flex flex-col"
             >
-              <div className="p-6 pt-20 space-y-2">
+              {/* Drawer Header */}
+              <div className="flex items-center justify-between px-6 py-5 border-b border-slate-100 shrink-0">
+                <Link href="/" className="flex items-center gap-2.5" onClick={() => setMobileOpen(false)}>
+                  <div className="relative w-[36px] h-[28px] overflow-hidden shrink-0">
+                    <div className="absolute top-[-1px] left-0 w-full h-[130%]">
+                      <Image
+                        src={brand.logo}
+                        alt="Wealth Acumen"
+                        fill
+                        className="object-contain object-top"
+                        priority
+                      />
+                    </div>
+                  </div>
+                  <div className="flex flex-col">
+                    <span className="font-[family-name:var(--font-outfit)] font-extrabold text-[16px] text-[#10141F] tracking-tight leading-none">
+                      Wealth Acumen
+                    </span>
+                    <span className="text-[7px] font-bold text-[#5B5955] tracking-[0.16em] uppercase mt-0.5 leading-none">
+                      INVEST RIGHT, PROSPER BRIGHT
+                    </span>
+                  </div>
+                </Link>
+                <button
+                  onClick={() => setMobileOpen(false)}
+                  className="p-2 -mr-2 rounded-lg text-slate-500 hover:text-slate-800 hover:bg-slate-50 transition-colors cursor-pointer"
+                  aria-label="Close menu"
+                >
+                  <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+
+              <div className="p-6 space-y-2 overflow-y-auto flex-1">
                 {navLinks.map((link) => (
                   <div key={link.label}>
                     <Link
