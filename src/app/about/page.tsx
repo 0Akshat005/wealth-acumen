@@ -104,7 +104,7 @@ export default function AboutPage() {
                 About <span className="text-[#D9791A]">Wealth Acumen</span>
               </h1>
 
-              <div className="space-y-4 text-base text-[#5B5955] leading-relaxed font-normal">
+              <div className="space-y-4 text-base text-[#5B5955] leading-relaxed font-normal text-justify">
                 <p className="text-lg font-semibold text-slate-800 leading-snug">
                   Guiding your financial journey with trust, clarity and purpose.
                 </p>
@@ -200,7 +200,7 @@ export default function AboutPage() {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
                   </svg>
                 </div>
-                <p className="text-slate-700 leading-relaxed text-base sm:text-lg">
+                <p className="text-slate-700 leading-relaxed text-base sm:text-lg text-justify">
                   {aboutContent.missionFull}
                 </p>
               </div>
@@ -225,7 +225,7 @@ export default function AboutPage() {
  
           <FadeInSection delay={0.1}>
             <div className="glass rounded-2xl p-8 md:p-12">
-              <p className="text-slate-700 leading-relaxed text-base sm:text-lg mb-8">
+              <p className="text-slate-700 leading-relaxed text-base sm:text-lg mb-8 text-justify">
                 {aboutContent.angelOnePartnership}
               </p>
  
